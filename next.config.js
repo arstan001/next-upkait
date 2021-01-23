@@ -1,9 +1,6 @@
-const { nextI18NextRewrites } = require('next-i18next/rewrites')
-
-const localeSubpaths = {
-   ru : 'ru'
-}
-
-module.exports= {
-    rewrites: async () => nextI18NextRewrites(localeSubpaths)
+module.exports = {
+    i18n: {
+        locales: ['en', 'ru'],
+        defaultLocale: 'en'
+    }
 }

@@ -1,4 +1,3 @@
-import { appWithTranslation } from '../i18n'
 
 function MyApp({Component, pageProps}) {
     return (
@@ -6,7 +5,7 @@ function MyApp({Component, pageProps}) {
             <Component {...pageProps}/> 
             <style jsx global>
             {`
-
+            @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&display=swap');
             :root {
                 --primary-color: #77bfa3;
                 --secondary-color: #22223b;
@@ -17,14 +16,14 @@ function MyApp({Component, pageProps}) {
             
             }
             body {
-                font-family: Source Sans Pro, sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
                 color: #333;
                 line-height: 1.6;
             }
             .container {
                 max-width: 1100px;
                 margin: 0 auto;
-                overflow: auto;
+                height:100%;
                 padding: 0 40px;
             }
             .navbar {
@@ -69,8 +68,7 @@ function MyApp({Component, pageProps}) {
             td {
                 align-items:center;
             }
-
-
+            
             .btn {
                 display: inline-block;
                 cursor: pointer;
@@ -80,7 +78,13 @@ function MyApp({Component, pageProps}) {
                 border: none;
                 border-radius: 5px;
             }
-            
+            .btn-dark {
+                background-color: var(--secondary-color);
+                color: #fff;
+            }
+            .btn-dark a {
+                color: #fff;
+            }
             
             .btn-outline {
                 background-color: transparent;
@@ -114,4 +118,4 @@ MyApp.getInitialProps = async ({Component, ctx}) =>{
     }
 }
 
-export default appWithTranslation(MyApp)
+export default MyApp

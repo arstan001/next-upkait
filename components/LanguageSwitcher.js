@@ -1,13 +1,42 @@
-import { i18n } from '../i18n'
-import { useContext } from 'react'
-import { I18nContext } from 'next-i18next'
-
+import { useRouter } from 'next/router'
+import en from '../locales/en'
+import ru from '../locales/ru'
 function LanguageSwitcher() {
-    const { i18n: { language }} = useContext(I18nContext)
+    const router = useRouter();
+    const { locale } = router
+    const t = locale === 'en' ? en : ru
+    const changeLanguage = (e) => {
+        const locale = e.target.value
+        router.push(router.pathname, router.pathname, { locale })
+    }
     return(
-        <>
-        <button type="button" onClick={()=> i18n.changeLanguage('ru')} className={language === 'ru' ? 'is-active' : ''}>RU</button>
-        <button type="button" onClick={()=> i18n.changeLanguage('en')} className={language === 'en' ? 'is-active' : ""}>EN</button>
+        <>  
+        <select 
+            onChange={changeLanguage}
+            defaultValue={locale}
+        >
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+
+        <style jsx>
+            {`
+              select {
+                  border: none;
+                  outline:none;
+                  background-color:transparent;
+                  border-radius:1px;
+                  color:white;  
+              }
+              select:active{
+                  outline:none;
+                  border:none;
+              }
+              option {
+                  background-color:#77bfa3;
+              }
+            `}
+        </style>
         </>
     )
 }

@@ -1,21 +1,21 @@
-import { withTranslation} from '../i18n'
 import MainLayout from '../components/MainLayout'
 import {useEffect, useState} from 'react'
 import { Client } from '../prismic-configuration'
 import Prismic from 'prismic-javascript'
 import { RichText } from 'prismic-reactjs'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useContext } from 'react'
-import { I18nContext } from 'next-i18next'
-
-function Products({t, product,producten}){
-
+import { useRouter} from 'next/router'
+import en from '../locales/en'
+import ru from '../locales/ru'
+function Products({product,producten}){
+    const router = useRouter();
+    const { locale } = router
+    const t = locale === 'en' ? en : ru
     
-    const { i18n: { language }} = useContext(I18nContext)
-    var disproduct = language === 'en' ? producten : product
+    var disproduct = locale === 'en' ? producten : product
     useEffect(()=>{
         setCompany(0)
-    },[language])
+    },[locale])
     const [company, setCompany] = useState(0)
     const [productobject, setProductobject] = useState({})
     const [isdisplayed, setIsisplayed] = useState(false)
@@ -23,7 +23,7 @@ function Products({t, product,producten}){
         <MainLayout>
             <div className="container">
                 <header className="text-center mt-4">
-                    <h1 className="mb-4">{t('Product')}</h1>
+                    <h1 className="mb-4">{t.Product}</h1>
                     <hr/>
                 </header>
                 <section className="row">
@@ -69,19 +69,19 @@ function Products({t, product,producten}){
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>{t('product:category')}:</td>
+                                        <td>{t.category}:</td>
                                         <td className="my">{isdisplayed===true ? RichText.render(productobject.itemcategory) : ""}</td>
                                     </tr>
                                     <tr>
-                                        <td>{t('product:weight')}:</td>
+                                        <td>{t.weight}:</td>
                                         <td className="my">{isdisplayed===true ? RichText.render(productobject.itemweight):""}</td>
                                     </tr>
                                     <tr>
-                                        <td>{t('product:company')}:</td>
+                                        <td>{t.company}:</td>
                                         <td className="my">{isdisplayed===true ? RichText.render(productobject.itemcompany) : ""}</td>
                                     </tr>
                                     <tr>
-                                        <td>{t('product:expiration')}:</td>
+                                        <td>{t.expiration}:</td>
                                         <td className="my">{isdisplayed===true ? RichText.render(productobject.itemexpiration) : ""}</td>
                                     </tr>
                                 </tbody>
@@ -189,7 +189,6 @@ export async function getServerSideProps(){
         Prismic.Predicates.at("document.type", "products"),
         {lang:'en-us'}
     )
-    console.log(product)
     return {
         props:{
             product:product,
@@ -197,6 +196,6 @@ export async function getServerSideProps(){
         }
     }
 }
-export default withTranslation()(Products)
+export default Products
 
 
