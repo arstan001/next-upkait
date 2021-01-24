@@ -39,7 +39,7 @@ function Index() {
                         <div className="col-8">
                             <h1>{t.whyustitle}</h1>
                             <p>{t.whyus}</p>
-                            <Link href="/about"><a class="btn btn-dark mt-3">{t.whyusmore}</a></Link>
+                            <Link href="/about"><a className="btn btn-dark mt-3">{t.whyusmore}</a></Link>
                         </div>
                         <div className="col-4">
                             <h1 className="font-weight-bold display-1">UPKAIT</h1>
@@ -54,12 +54,43 @@ function Index() {
                     <h1>{t.companytitle}</h1>
                 </header>
                 <main>
-                <Card style={{ width: '18rem' }}>
+                {/* <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="holder.js/100px180" />
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                     </Card.Body>
-                </Card>
+                </Card> */}
+                
+            <div className="card">
+                <h4>Namyang</h4>
+                <img src="/images/logos/namyang.png" alt=""/>
+            </div>
+            <div className="card">
+                <h4>Nongshim</h4>
+                <img src="images/logos/nongshim.png" alt=""/>
+            </div>
+            <div className="card">
+                <h4>CJ</h4>
+                <img src="images/logos/CJ.png" alt=""/>
+            </div>
+            <div className="card">
+                <h4>Ottogi</h4>
+                <img src="images/logos/ottogi.png" alt=""/>
+            </div>
+            <div className="card">
+                <h4>Obok</h4>
+                <img src="images/logos/" alt=""/>
+            </div>
+            <div className="card">
+                <h4>Crown</h4>
+                <img src="images/logos/crown.png" alt=""/>
+            </div>
+            <div className="card">
+                <h4>Haitai</h4>
+                <img src="images/logos/haitai.png" alt=""/>
+            </div>
+
+
                 </main>
                 </div>
             </section>
@@ -116,7 +147,21 @@ function Index() {
             }
             .companies main {
                 display:flex;
+                flex-wrap:wrap;
                 justify-content:center;
+            }
+            .card {
+                max-width: 140px;
+                min-width:140px;
+                background-color: #fff;
+                color: #333;
+                border-radius: 10px;
+                box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+                padding: 20px;
+                margin: 20px;
+            }
+            .card img {
+                width:100%;
             }
             `
              }</style>
