@@ -106,11 +106,11 @@ function MyApp({Component, pageProps}) {
         )
 }
 
-MyApp.getInitialProps = async ({Component, ctx}) =>{
+MyApp.getStaticProps = async ({Component, ctx}) =>{
     let pageProps = {}
 
     if (Component.getInitialProps){
-        pageProps = await Component.getInitialProps(ctx)
+        pageProps = await Component.getStaticProps(ctx)
     }
     
     return {
