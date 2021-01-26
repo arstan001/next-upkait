@@ -32,6 +32,12 @@ function MyApp({Component, pageProps}) {
                 min-height: 70px;
                 overflow:hidden;
             }
+            .companyblock button h1{
+                font-size:14px;
+            }
+            .companyblock .active h1{
+                font-weight:bold;
+            }
             p{
                 font-size: 14px;
                 line-height: 1;

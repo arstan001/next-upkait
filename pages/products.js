@@ -28,13 +28,13 @@ function Products({product,producten}){
                 </header>
                 <section className="row">
                     <div className="col-2 companyblock">
-                        <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>OTTOGI</button>
+                        <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
                         <hr/>
-                        <button onClick={()=>setCompany(1)} className={company===1 ? "active" : ""}>BIBIGO</button>
+                        <button onClick={()=>setCompany(1)} className={company===1 ? "active" : ""}>{RichText.render(disproduct.results[1].data.item[0].itemcompany)}</button>
                         <hr/>  
-                        <button onClick={()=>setCompany(2)} className={company===2 ? "active" : ""}>NONGSHIM</button>
+                        <button onClick={()=>setCompany(2)} className={company===2 ? "active" : ""}>{RichText.render(disproduct.results[2].data.item[0].itemcompany)}</button>
                         <hr/>
-                        <button onClick={()=>setCompany(3)} className={company===3 ? "active" : ""}>NAMYANG</button>
+                        <button onClick={()=>setCompany(3)} className={company===3 ? "active" : ""}>{RichText.render(disproduct.results[3].data.item[0].itemcompany)}</button>
                         <hr/>
                     </div>
                     <div className="col-1"></div>
