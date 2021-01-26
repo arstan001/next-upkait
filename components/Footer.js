@@ -43,8 +43,8 @@ function Footer(){
             <p>Copyright &copy; 2021</p>
         </div>
         <div className="social">
-            <Link href='./'><a><i className="fab fa-facebook fa-2x"></i></a></Link>
-            <Link href='./'><a><i className="fab fa-instagram fa-2x"></i></a></Link>
+            <Link href='/'><a><i className="fab fa-facebook fa-2x"></i></a></Link>
+            <Link href='/'><a><i className="fab fa-instagram fa-2x"></i></a></Link>
         </div>
         <div>
             <nav>

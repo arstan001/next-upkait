@@ -32,6 +32,17 @@ function MyApp({Component, pageProps}) {
                 min-height: 70px;
                 overflow:hidden;
             }
+            .products{
+                display:flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 600px;
+                padding: 0;
+                height:auto;
+                min-height:600px;
+                height:auto !important; 
+                justify-content: space-between;
+            }
             .companyblock button h1{
                 font-size:14px;
             }
