@@ -48,18 +48,12 @@ function Index() {
                     </div>
                 </div>
             </section>
-            <section className="companies">
+            <section className="companies mb-5">
                 <div className="pt-5 align-items-center container">
                 <header className="takefullwidth col-12">
                     <h1>{t.companytitle}</h1>
                 </header>
                 <main>
-                {/* <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                    </Card.Body>
-                </Card> */}
                 
             <div className="card">
                 <h4>Namyang</h4>
@@ -151,8 +145,8 @@ function Index() {
                 justify-content:center;
             }
             .card {
-                max-width: 140px;
-                min-width:140px;
+                max-width: 100px;
+                min-width:100px;
                 background-color: #fff;
                 color: #333;
                 border-radius: 10px;
@@ -161,8 +155,14 @@ function Index() {
                 margin: 20px;
             }
             .card img {
+                display:flex;
                 width:100%;
             }
+            .card h4{
+                
+                font-size:14px;
+            }
+            
             `
              }</style>
         </MainLayout>

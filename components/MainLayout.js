@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import Footer from './Footer'
 import MyNavbar from './Navbar'
 
 function MainLayout({children, title = 'Next Course'}){
@@ -12,6 +13,7 @@ function MainLayout({children, title = 'Next Course'}){
             <main>
                 {children}
             </main>
+        <Footer/>
         </>
     )
 }

@@ -4,10 +4,15 @@ import MainLayout from '../components/MainLayout'
 import { useRouter} from 'next/router'
 import en from '../locales/en'
 import ru from '../locales/ru'
+
+import GoMap from '../components/MyMap'
+
+
 function About() {
     const router = useRouter();
     const { locale } = router
     const t = locale === 'en' ? en : ru
+
     return (
         <MainLayout title={"About Page"}>
              <section className="about-head">
@@ -189,8 +194,7 @@ function About() {
                         <p className="time">Апр, 2015</p>
                         <div className="content">
                             <h4 className="title">Открытие филиала в России</h4>
-                            <p>Открытие филиала в России (г. Владивосток).
-                            </p>
+                            <p>Открытие филиала в России (г. Владивосток).</p>
                         </div>
                     </div>
                 </div>
@@ -200,23 +204,27 @@ function About() {
 
         <section className="about-sub-head bg-light py-3">
             <div className="container grid">
-                <div>
-                    <p>Адрес: 6F, 226, Асиад-деро , Донае-гу, Пусан, Республика Корея(47837)
-                        Тел .: 051-557-6781 факс: 051-556-0084 e-mail: izaccola@daum.net
-                    <div className="card bg-light p-3">
-                        <img src="./images/about/busan.png" className="img-fluid" alt=""/>
+                <div className="row maps">
+                    <div className="col-5">
+                        <p>Адрес: 6F, 226, Асиад-деро , Донае-гу, Пусан, Республика Корея(47837)
+                            Тел .: 051-557-6781 факс: 051-556-0084 e-mail: izaccola@daum.net
+                        </p>
+                        <div className="map"> 
+                            <GoMap coord={{ lat:37.495, lng:127.029}}/>
+                        </div>
                     </div>
-                    </p>
-                </div>
-                <div>
+                    <div className="col-5">
                     <p>Офис и склад во Владивостоке.
                         Адрес: г. Владивосток, ул. Запорожская 77, офис 627
                         Тел.:+7-908-961-3591. e-mail: lyuda_kim73@mail.ru
                     </p>
-                    <div className="card bg-light p-3">
-                        <img src="./images/about/vlad.png" className="img-fluid" alt=""/>
+                    <div className="map"> 
+                        <GoMap coord={{ lat:43.130, lng:131.900}}/>
                     </div>
                 </div>
+                </div>
+                
+                
             </div>
         </section>
         <style jsx>{`
@@ -224,7 +232,10 @@ function About() {
             width: 200px;
             justify-self: flex-end;
         }
-        
+        .maps{
+            display:flex;
+            justify-content: space-between;
+        }
         /* .about-sub-head img {
             width: 300px;
             justify-self: flex-end;
@@ -246,7 +257,12 @@ function About() {
         .about-head {
             position: relative;
         }
-        
+        .map {
+            max-width:300px !important;
+            z-index:4;
+            height:240px;
+            overflow:hidden;
+        }
         .about-head > * {
             z-index: 10;
             position: relative;
