@@ -42,13 +42,13 @@ function Products({product,producten}){
                         
                         {disproduct.results[company].data.item.map((item,index)=>
                         <div className="productcard" key={index}>
-                            <div className="imagewrapperr">
-                                <img src={item.itemimage.url} alt="loading"/>
-                            </div>
-                            <a onClick={()=>{
+                             <a onClick={()=>{
                                    setProductobject(item)
                                    setIsisplayed(true)
-                               }}>{item.itemtitle[0].text}</a>
+                               }}><div className="imagewrapperr">
+                                <img src={item.itemimage.url} alt="loading"/>
+                            </div>
+                           <p>{item.itemtitle[0].text}</p></a>
                         </div>
                         )}
                             
@@ -97,7 +97,7 @@ function Products({product,producten}){
                 padding-top:16px;
             }
             .companyblock button{
-                font-size:10px;
+                font-size:14px;
             }
             .companyblock .active{
                 font-weight:bold;
@@ -120,7 +120,13 @@ function Products({product,producten}){
                 border-radius: 4px;
                 border:1px solid rgb(220,220,220, 0.5);
             }
-            
+            .productcard a{
+                cursor: pointer;
+            }
+            .productcard a:hover{
+                font-weight:bold;
+                color:black;
+            }
             .imagewrapperr{
                 position: relative;
                 text-align:center;
@@ -144,11 +150,11 @@ function Products({product,producten}){
                 background-color:white;
                 top:50%;
                 left:60%;
-                width:560px;
+                width:800px;
                 height:560px;
-                margin-left:-280px;
+                margin-left:-455px;
                 margin-top:-280px;
-                border:1px solid grey;
+                border:1px solid  #f3f3f3;
                 border-radius:10px;
             }
             .productdetail .row{
@@ -158,8 +164,9 @@ function Products({product,producten}){
                 max-height:280px;
                 width:auto;
             }
-            .productdetail table thead tr td{
-                align-items: center;
+            .productdetail table tbody tr td:first-of-type{
+            
+                padding-right:12px;
             }
             .myButton{
                 position:absolute;
