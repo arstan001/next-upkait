@@ -97,33 +97,6 @@ function Footer(){
             </nav>
         </div>
     </div>
-    <style jsx>{`
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .bg-dark a{
-    color: white;
-}
-.footer{
-    color:white;
-}
-ul{
-    list-style-type: none;
-}
-    .footer .social a {
-        margin: 0 10px;
-    }
-    .grid-4 {
-        grid-template-columns: repeat(6, 1fr);
-        align-items: flex-start;
-    }
-    
-    `}</style>
 </footer>
    )
 }

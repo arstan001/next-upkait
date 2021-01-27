@@ -13,48 +13,58 @@ function Index() {
     return (
         <MainLayout title={"Home Page"}>
             <section className="showcase">
-                <div className="container">
-                    <div className="row align-items-center">
-                    <div className="col-8">
-                        <h1>{t.title}</h1>
-                        <p>{t.titlep}</p>
-                        <Link href="/products"><a className="btn btn-outline">{t.titlebuttontext}</a></Link>
-                    </div>
-                    <div className="col-4">
-                        <img src="/images/home-bg.png" className="img-fluid" width="300px"alt=""/>
-                    </div>
-                    </div>
-                </div>
-            </section>
-            <section className="intro ">
-                <div className="container d-flex align-items-center text-center">         
-                    <p className="fs-3">
-                        {t.intro}
-                    </p>
-                </div>
-            </section>
-            <section className="whyus">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-8">
-                            <h1>{t.whyustitle}</h1>
-                            <p>{t.whyus}</p>
-                            <Link href="/about"><a className="btn btn-dark mt-3">{t.whyusmore}</a></Link>
-                        </div>
-                        <div className="col-4">
-                            <h1 className="font-weight-bold display-1">UPKAIT</h1>
-                        </div>
+        <div className="container grid">
+            <div className="showcase-text">
+                <h1>Корейские товары</h1>
+                <p>Приобретайте майонез, панировочные сухари, рамен бысторого приготовления, различные соусы, напитки и
+                    многое другое в Upkaite!
+                </p>
+                <a href="products2.html" className="btn btn-outline">Смотреть товары</a>
+            </div>
+            <div className="showcase-img">
+                <img src="/images/home-bg.png" alt=""/>
+            </div>
+        </div>
+    </section>
 
-                    </div>
-                </div>
-            </section>
-            <section className="companies mb-5">
-                <div className="pt-5 align-items-center container">
-                <header className="takefullwidth col-12">
-                    <h1>{t.companytitle}</h1>
-                </header>
-                <main>
-                
+    <section className="intro">
+        <div className="container">
+            <h3 className="stats-heading text-center my-1">
+                Upkait имеет более 30 лет опыта, <br/>и мы являемся самой известной торговой компанией в России и странах
+                СНГ по
+                продаже корейских продуктов питания! 
+            </h3>
+        </div>
+    </section>
+
+    <section className="cli">
+        <div className="container grid">
+        </div>
+    </section>
+
+    <section className="whyus my-5 py-5">
+        <div className="container grid">
+            <div className="text-center bg-img1">
+                <h3 className="lg"> Почему выбирают нас?</h3>
+                <p>Upkait официально работает со всеми корейскими
+                    конгломератами и средними и маленькими компаниями. <br/>Мы получаем низкие цены от завода
+                    благодаря
+                    крупным заказам, и наши сотрудники с многолетним опытом торговли оперативно и точно поставляют
+                    продукцию нашим клиентам.
+                </p>
+                <a href="about2.html" className="btn btn-dark">Читать больше о нас</a>
+            </div>
+            <div className="text-center bg-img2 title">
+                <h1>Апкайт</h1>
+            </div>
+        </div>
+    </section>
+
+    <section className="companies">
+        <h2 className="md text-center my-2">
+            Компании с которыми мы сотрудничаем
+        </h2>
+        <div className="container flex">
             <div className="card">
                 <h4>Namyang</h4>
                 <img src="/images/logos/namyang.png" alt=""/>
@@ -84,87 +94,8 @@ function Index() {
                 <img src="images/logos/haitai.png" alt=""/>
             </div>
 
-
-                </main>
-                </div>
-            </section>
-            <style jsx>{`
-            .takefullheight{
-                height:100%;
-            }
-            .takefullwidth{
-                width:100%;
-            }
-            .showcase{
-                height:500px;
-                width:100%;
-                background-color: rgb(218, 208, 208);
-            }
-            .showcase h1{
-                font-size:60px;
-                font-weight:600;
-            }
-            .showcase p{
-                font-size:24px;
-                font-weight:500;
-            }
-            .row{
-                height:100%;
-            }
-            .intro {
-                display:flex;
-                height:300px;
-            }
-            .intro p {
-                font-size:28px;
-            }
-            .whyus{
-                height:345px;
-                background-color:#ecd5d58a;
-                text-align:center;
-            }
-            .whyus h1{
-                font-size:48px;
-            }
-            .whyus p{
-                line-height:1.6;
-                font-size:16px;
-                margin:0;
-            }
-            .whyus button{
-                text-decoration:underline;
-            }
-            .companies {
-                align-items:center;
-                height:300px;
-                text-align:center;
-            }
-            .companies main {
-                display:flex;
-                flex-wrap:wrap;
-                justify-content:center;
-            }
-            .card {
-                max-width: 100px;
-                min-width:100px;
-                background-color: #fff;
-                color: #333;
-                border-radius: 10px;
-                box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
-                padding: 20px;
-                margin: 20px;
-            }
-            .card img {
-                display:flex;
-                width:100%;
-            }
-            .card h4{
-                
-                font-size:14px;
-            }
-            
-            `
-             }</style>
+        </div>
+    </section>
         </MainLayout>
         
     )
