@@ -26,7 +26,7 @@ body {
 .navbar {
     background-color: var(--primary-color);
     /* color: #fff; */
-    min-height: 70px;
+    height: 80px;
     overflow:hidden;
 }
 .navbar a{
@@ -63,6 +63,7 @@ a {
     -webkit-transition:  0.5s ease-in-out;
     transition:  0.5s ease-in-out;
 }
+
 button {
     border:none;
     background:none;
