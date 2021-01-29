@@ -9,7 +9,7 @@ export default {
     titlebuttontext:"See more",
     intro: "Upkite has over 30 years of experience, It is the most famous Korean grocery trading company in Russia and CIS countries!",
     whyustitle:"Why Choose Us?",
-    whyus: "Uplait officially works with many Korean co nglomerates and SMEs.<br> We get low prices from our factories thanks to large orders and talented people with years of trading experience. We deliver our products fast and accurately.",
+    whyus: "Uplait officially works with many Korean co nglomerates and SMEs.We get low prices from our factories thanks to large orders and talented people with years of trading experience. We deliver our products fast and accurately.",
     whyusmore: "Read More",
     companytitle: "Сompanies we cooperate with",
     category:"Category",
