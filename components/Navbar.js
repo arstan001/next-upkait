@@ -23,7 +23,7 @@ function MyNavbar() {
                     <Nav className="mx-3"><Link href={'/recipes'}><a>{t.Recipes}</a></Link></Nav>
                     <Nav className="mx-3"><Link href={'/contact'}><a>{t.Contact}</a></Link></Nav>
                 </Nav>
-                <Nav className="ml-4">
+                <Nav className="ml-4 swtch">
                     <LanguageSwitcher/>
                 </Nav>
             </Navbar.Collapse>

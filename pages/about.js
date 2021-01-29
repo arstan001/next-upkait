@@ -218,7 +218,7 @@ function About() {
                         <p>Office and warehouse in Vladivostok.
                         Address: Vladivostok, st. Aleutskaya 51, 39.
                     Tel : + 7-908-961-3591. e-mail: lyuda_kim73@mail.ru</p>
-                        <div class=" bg-light p-3">
+                        <div className=" bg-light p-3">
                             <img src="./images/about/vlad.png" alt="" />
                         </div>
                     </div>

@@ -28,14 +28,22 @@ function Products({product,producten}){
                 </header>
                 <section className="row">
                     <div className="col-2 companyblock">
-                        <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
+                        {disproduct.results.map((name,index)=>
+                            
+                            <div key={index}>
+                            <button onClick={()=>setCompany(index)} className={company===index ? "active" : ""}>{RichText.render(name.data.item[0].itemcompany)}</button>
+                            <hr/>
+                            </div>
+                            
+                        )}
+                        {/* <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
                         <hr/>
                         <button onClick={()=>setCompany(1)} className={company===1 ? "active" : ""}>{RichText.render(disproduct.results[1].data.item[0].itemcompany)}</button>
                         <hr/>  
                         <button onClick={()=>setCompany(2)} className={company===2 ? "active" : ""}>{RichText.render(disproduct.results[2].data.item[0].itemcompany)}</button>
                         <hr/>
                         <button onClick={()=>setCompany(3)} className={company===3 ? "active" : ""}>{RichText.render(disproduct.results[3].data.item[0].itemcompany)}</button>
-                        <hr/>
+                        <hr/> */}
                     </div>
                     <div className="col-1"></div>
                     <div className="col-9 products">
@@ -55,13 +63,13 @@ function Products({product,producten}){
                     </div>
                 </section>
             </div>
-            <div className={isdisplayed===true ? "productdetail" : "productdetain d-none"}>
-                <button className="myButton" onClick={()=>setIsisplayed(false)}>x</button>
+            <div className={isdisplayed===true ? "productdetail" : "productdetail d-none"}>
+                <button className="myButton" onClick={()=>setIsisplayed(false)}><i className="far fa-times-circle"></i></button>
                 <div className="row flex align-items-center">
-                    <div className="col-6 text-center align-middle">
+                    <div className="col-md-6 col-sm-12 text-center align-middle">
                         <img className="img-fluid mt-2"  src={isdisplayed === true ? productobject.itemimage.url : ""} alt="loading"/>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6 col-sm-12">
                         <header className="myHeader">
                             {isdisplayed===true ? RichText.render(productobject.itemtitle) : ""}
                         </header>
@@ -178,11 +186,43 @@ function Products({product,producten}){
                 right:10px;
                 height:24px;
                 width:24px;
+                font-size:24px;
                 align-items:center;
                 display:flex;
+                color:black;
                 justify-content:center;
-                border: 1px solid black;
-                border-radius: 20px;
+                background-color:transparent;
+                border:none;
+            }
+            @media only screen and (max-width: 600px)  {
+                .productdetail{
+                    position:fixed;
+                    display:flex;
+                    justify-content: space-around;
+                    background-color:white;
+                    top:50%;
+                    left:60%;
+                    width:400px;
+                    height:560px;
+                    margin-left:-240px;
+                    margin-top:-280px;
+                    border:1px solid  #f3f3f3;
+                    border-radius:10px;
+                }
+                .productdetail .row{
+                    width:100%;
+                }
+                .productdetail img {
+                    max-height:280px;
+                    width:auto;
+                }
+                .products{
+                    justify-content:center;
+                }
+                .productdetail main{
+                    display:flex;
+                    justify-content:center;
+                }
             }
         `}  
         </style>

@@ -16,7 +16,7 @@ function Index() {
                     <div className="showcase-text">
                         <h1>{t.title}</h1>
                         <p>{t.titlep}</p>
-                        <Link href="/products"><a className="btn btn-outline">{t.titlebuttontext}</a></Link>
+                        <Link href="/products"><a className="mbtn btn-outline">{t.titlebuttontext}</a></Link>
                     </div>
                     <div className="showcase-img">
                         <img src="/images/home-bg.png" className="img-fluid" width="300px" alt="" />
