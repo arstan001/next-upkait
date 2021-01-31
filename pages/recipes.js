@@ -1,12 +1,18 @@
 import MainLayout from "../components/MainLayout";
+import { useRouter } from 'next/router'
+import en from '../locales/en'
+import ru from '../locales/ru'
 function Recipes(){
+    const router = useRouter();
+    const { locale } = router
+    const t = locale === 'en' ? en : ru
     return (
         <MainLayout>
 <section className="recipes-head">
         <div className="container grid">
             <div className="recipe_title">
-                <h1>Рецепты корейской кухни </h1>
-                <p> Готовьте по рецептам от Upkait</p>
+                <h1>{t.recipes_head_title}</h1>
+                <p>{t.recipes_head_text}</p>
             </div>
             <div className="overlay"></div>
         </div>
@@ -18,7 +24,7 @@ function Recipes(){
                 <img src="./images/recipes/recipe3.jpg" className="img-fluid" alt=""/>
             </div>
             <div className="card">
-                <h3>Суп с дамплингами </h3>
+                <h3>{t.recipe1_title}</h3>
                 <p>1. Разделить яичные белки и желтки, тонко сковородить и нарезать.<br/>
                     2. Налейте в кастрюлю 500 мл воды и вскипятите, снова отварите половину говяжьих палочек, положите
                     кнедлики и нарезанный картофель.<br/>
