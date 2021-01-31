@@ -18,9 +18,8 @@ function About() {
             <section className="about-head">
                 <div className="container grid">
                     <div className="about_title">
-                        <h1>Upkait</h1>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />Expedita nesciunt ut
-                        delectus, omnis repellendus quae sint vitae culpa temporibus dicta.</p>
+                        <h1>{t.brand_low}</h1>
+                        <p>{t.about_head}</p>
                     </div>
                     <div className="overlay"></div>
                 </div>
@@ -36,7 +35,7 @@ function About() {
                 </div>
             </section>
             <section className="timeline">
-                <h1>История</h1>
+                <h1>{t.History}</h1>
                 <div className="container">
                     <div className="timeline-body">
                         <div className="timeline-item">
@@ -68,11 +67,10 @@ function About() {
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">1 Апр, 2000</p>
+                            <p className="time">{t.time4}</p>
                             <div className="content">
-                                <h4 className="title"> Реорганизация</h4>
-                                <p>Реорганизация компании в компанию «Апкайт корпорейшн»
-                            </p>
+                                <h4 className="title">{t.timetitle4}</h4>
+                                <p>{t.timetitle4_text}</p>
                             </div>
                         </div>
                     </div>
@@ -80,17 +78,17 @@ function About() {
                         <div className="timeline-item">
                             <p className="time">2001</p>
                             <div className="content">
-                                <h4 className="title"> Открытие филиала в России</h4>
-                                <p>Открытие филиала в г. Новосибирске</p>
+                                <h4 className="title">{t.timetitle5}</h4>
+                                <p>{t.timetitle5_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">Дек, 2002</p>
+                            <p className="time">{t.time6}</p>
                             <div className="content">
-                                <h4 className="title">Открытие юридической организации в России</h4>
-                                <p>Открытие независимой юридической организации в г. Владивосток
+                                <h4 className="title">{t.timetitle6}</h4>
+                                <p>{t.timetitle6_text}
                             </p>
                             </div>
                         </div>
@@ -99,8 +97,8 @@ function About() {
                         <div className="timeline-item">
                             <p className="time">2002</p>
                             <div className="content">
-                                <h4 className="title">Президентская награда</h4>
-                                <p>Президентская награда за достижения в сфере внешнеэкономических отношений и торговли</p>
+                                <h4 className="title">{t.timetitle7}</h4>
+                                <p>{t.timetitle7_text}</p>
                             </div>
                         </div>
                     </div>
@@ -108,8 +106,8 @@ function About() {
                         <div className="timeline-item">
                             <p className="time">2004</p>
                             <div className="content">
-                                <h4 className="title">Открытие филиалов в СНГ</h4>
-                                <p>Открытие филиала в Казахстане и Кыргызстане</p>
+                                <h4 className="title">{t.timetitle8}</h4>
+                                <p>{t.timetitle8_text}</p>
                             </div>
                         </div>
                     </div>
@@ -117,61 +115,53 @@ function About() {
                         <div className="timeline-item">
                             <p className="time">2006</p>
                             <div className="content">
-                                <h4 className="title">Президентская награда</h4>
-                                <p>Президентская награда за достижения в сфере внешнеэкономических отношений и торговли (товарооборот превысил $20 млн.)
-                            </p>
+                                <h4 className="title">{t.timetitle9}</h4>
+                                <p>{t.timetitle9_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">30 Нбр, 2008</p>
+                            <p className="time">{t.time10}</p>
                             <div className="content">
-                                <h4 className="title">Президентская награда</h4>
-                                <p>Президентская награда за достижения в сфере внешнеэкономических отношений и торговли (
-                                товарооборот превысил $30 млн.). Награда от министерства экономического образования.
-                            </p>
+                                <h4 className="title">{t.timetitle10}</h4>
+                                <p>{t.timetitle10_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">Дек, 2009</p>
+                            <p className="time">{t.time11}</p>
                             <div className="content">
-                                <h4 className="title">Признание профессиональной торговой компанией</h4>
-                                <p> Признан профессиональной торговой компанией Торгово-промышленной палатой Республики
-                                Корея
-                            </p>
+                                <h4 className="title">{t.timetitle11}</h4>
+                                <p>{t.timetitle11_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">Дек, 2010</p>
+                            <p className="time">{t.time12}</p>
                             <div className="content">
-                                <h4 className="title"> Превышение $43 млн. товарооборота
-                            </h4>
-                                <p>Годовой товарооборот компании превысил $43 млн.
-                            </p>
+                                <h4 className="title">{t.timetitle12}</h4>
+                                <p>{t.timetitle12_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">Нбр, 2011</p>
+                            <p className="time">{t.time13}</p>
                             <div className="content">
-                                <h4 className="title">Награда Премьер-министра</h4>
-                                <p>Награда Премьер-министра Республики Корея в День внешней Торговли.
-                            </p>
+                                <h4 className="title">{t.timetitle13}</h4>
+                                <p>{t.timetitle13_text}</p>
                             </div>
                         </div>
                     </div>
                     <div className="timeline-body">
                         <div className="timeline-item">
-                            <p className="time">Апр, 2015</p>
+                            <p className="time">{t.time14}</p>
                             <div className="content">
-                                <h4 className="title">Открытие филиала в России</h4>
-                                <p>Открытие филиала в России (г. Владивосток).</p>
+                                <h4 className="title">{t.timetitle14}</h4>
+                                <p>{t.timetitle14_text}</p>
                             </div>
                         </div>
                     </div>
@@ -182,18 +172,16 @@ function About() {
             <section className="about-sub-head bg-light py-3">
                 <div className="container grid">
                     <div>
-                        <p>Head office in Busan
-                        Address: 6F, 226, Asiad-daero, Dongnae-gu, Busan, Republic of Korea(47837)
-                        Tel .: 051-557-6781 Fax: 051-556-0084 e-mail: izaccola@daum.net
+                        <p>
+                            {t.busan_address}
+                        </p>
                             <div className=" bg-light p-3">
                                 <img src="./images/about/busan.png" alt="" />
                             </div>
-                        </p>
+                        
                     </div>
                     <div>
-                        <p>Office and warehouse in Vladivostok.
-                        Address: Vladivostok, st. Aleutskaya 51, 39.
-                    Tel : + 7-908-961-3591. e-mail: lyuda_kim73@mail.ru</p>
+                        <p>{t.russian_address}</p>
                         <div className=" bg-light p-3">
                             <img src="./images/about/vlad.png" alt="" />
                         </div>

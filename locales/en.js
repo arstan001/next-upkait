@@ -72,8 +72,8 @@ export default {
                                 time14: "Apr, 2015",
                                 timetitle14: "Branch in Russia",
                                 timetitle14_text: "Opening a branch in Russia (Vladivostok).",
-                                busan_address: "Head office in Busan Address: 6F, 226, Asiad-daero, Dongnae-gu, Busan, Republic of Korea(47837)</br>Tel .: 051-557-6781 Fax: 051-556-0084 e-mail: izaccola@daum.net",
-                                russian_address: "Office and warehouse in Vladivostok. Address: Vladivostok, st. Aleutskaya 51, 39. </br> Tel : + 7-908-961-3591. e-mail: lyuda_kim73@mail.ru",
+                                busan_address: "Head office in Busan Address: 6F, 226, Asiad-daero, Dongnae-gu, Busan, Republic of Korea(47837)Tel .: 051-557-6781 Fax: 051-556-0084 e-mail: izaccola@daum.net",
+                                russian_address: "Office and warehouse in Vladivostok. Address: Vladivostok, st. Aleutskaya 51, 39.  Tel : + 7-908-961-3591. e-mail: lyuda_kim73@mail.ru",
 
                                 category: "Category",
                                 weight: "Capacity",
@@ -84,17 +84,28 @@ export default {
                                 recipes_head_text: "Learn how to cook with Upkait",
 
                                 recipe1_title: "DUMPLING SOUP",
-                                recipe1_title: "1. Separate egg whites and yolks, fry finely and chop.\/n2. Pour 500 ml of water into a saucepan and boil, boil half of the beef sticks again, add the dumplings and chopped potatoes. \n3. When the dumplings and chopped potatoes are done, add the green onions, garlic and peppers.\n 4. Put it in a bowl and add the egg to it.",
+                                recipe1_text: "1. Separate egg whites and yolks, fry finely and chop.\/n2. Pour 500 ml of water into a saucepan and boil, boil half of the beef sticks again, add the dumplings and chopped potatoes. \n3. When the dumplings and chopped potatoes are done, add the green onions, garlic and peppers.\n 4. Put it in a bowl and add the egg to it.",
                             
                                 recipe2_title: "CURRY",
-                                recipe2_text: "<strong>Curry Rice (Carrie Rice / Kare Rice)</strong> <br> <strong>Ingredients:</strong> Meat 150 g (fillet of pork, beef, turkey or chicken) or seafood, seasoning Ottogi curry 100 g 1 pc, onions 1-2 pcs., Potatoes 3 pcs, carrots 1 pc, vegetable oil 30 g, 700 ml of water, salt, pepper taste. <br> <br> Preparation: Photo-recipe for curry rice (curry rice / kare rice) Cut meat, onions, carrots, potatoes into half a centimeter cubes. Fry the meat in vegetable oil in a deep frying pan, add the chopped vegetables and continue frying. Add 500 ml of water to the meat with vegetables and simmer over low heat until almost cooked. Stir occasionally. Stir 100 g curry powder in 200 ml cold water and pour into stewed vegetables and meat, mix thoroughly and simmer until cooked. Place hot rice on a plate and top with curry rice. Bon Appetit!",
+                                recipe2_text: "Curry Rice (Carrie Rice / Kare Rice)  Ingredients: Meat 150 g (fillet of pork, beef, turkey or chicken) or seafood, seasoning Ottogi curry 100 g 1 pc, onions 1-2 pcs., Potatoes 3 pcs, carrots 1 pc, vegetable oil 30 g, 700 ml of water, salt, pepper taste.   Preparation: Photo-recipe for curry rice (curry rice / kare rice) Cut meat, onions, carrots, potatoes into half a centimeter cubes. Fry the meat in vegetable oil in a deep frying pan, add the chopped vegetables and continue frying. Add 500 ml of water to the meat with vegetables and simmer over low heat until almost cooked. Stir occasionally. Stir 100 g curry powder in 200 ml cold water and pour into stewed vegetables and meat, mix thoroughly and simmer until cooked. Place hot rice on a plate and top with curry rice. Bon Appetit!",
                             
                                 recipe3_title: "TTEOKBOKKI",
-                                recipe3_text: "<strong>Noodle Tteok-bokki Recipe</strong> (for 2 servings) <br> 1. Rinse 200g (2 bags) of rice cakes with water and remove. <br> 2. Put 400ml (2 cups) of water in a pot and boil. <br> 3. When the water starts to boil, add 1 ramen noodles, 120g (2 bags) of rinsed rice cakes and sauce, 6g (2 bags) of dried busan fish cake and boil for 4-5 minutes to complete.<br> *It is delicious even if you enjoy boiled eggs, tempura, various kinds of fish, and vegetables to suit your taste.",
+                                recipe3_text: "Noodle Tteok-bokki Recipe (for 2 servings)  1. Rinse 200g (2 bags) of rice cakes with water and remove.  2. Put 400ml (2 cups) of water in a pot and boil.  3. When the water starts to boil, add 1 ramen noodles, 120g (2 bags) of rinsed rice cakes and sauce, 6g (2 bags) of dried busan fish cake and boil for 4-5 minutes to complete. *It is delicious even if you enjoy boiled eggs, tempura, various kinds of fish, and vegetables to suit your taste.",
                             
-                                recipe33_text: "<strong>Soup Tteok-bokki Recipe</strong> (for 2 servings)<br> 1. Rinse 300g (2 bags) of rice cakes with water and remove. <br> 2. Put 300ml (1 and 1/2 cups) of water in a pan, and boil it with the rinsed rice cake and sauce 120g (2 bags) and vegetable garnish 4g (2 bags).<br> 3. Stir well for 5~6 minutes until the mochi is soft and finished.<br> *It is delicious even if you add fish cake, boiled egg, ramen etc. to suit your taste.",
+                                recipe33_text: "Soup Tteok-bokki Recipe (for 2 servings) 1. Rinse 300g (2 bags) of rice cakes with water and remove.  2. Put 300ml (1 and 1/2 cups) of water in a pan, and boil it with the rinsed rice cake and sauce 120g (2 bags) and vegetable garnish 4g (2 bags). 3. Stir well for 5~6 minutes until the mochi is soft and finished. *It is delicious even if you add fish cake, boiled egg, ramen etc. to suit your taste.",
 
-                                
+                                recipe0_title: "How to eat kimchi-flavored seasoning powder",
+recipe4_title: "Meat",
+recipe4_text: "Make a cut in the middle and middle of the whole pork belly. Sprinkle generously with olive oil and kimchi seasoning over the whole pork belly and wrap in cooking foil. Bake 15 minutes at 165 degrees in the airfryer and you're done!",
+recipe5_title: "Ramen",
+recipe5_text: "Spicy Haejang Ramen Take 1/3 of the Haejang Ramen Ramen Spicy Soup, which will calm your stomach the day after drinking a lot, and add 1 tablespoon of kimchi seasoning.",
+recipe6_title: "Pizza and Pasta", 
+recipe6_text: "A must for those who cannot eat more than two slices of pizza without pickles. If you sprinkle them on pizza and pasta, the sensation is ZERO.",
+recipe7_title: "Stew and roast", 
+recipe7_text: "Stews and Roasts When the stew or hot pot is crispy, kimchi seasoning is perfect for a delicious meal.", 
+recipe8_title: "Chicken breast", 
+recipe8_text: "Chicken breast for those on a low tango and quito diet, a zero calorie sauce! Chicken breasts that were bitten and shouldn't be eaten are delicious again!",
+
 
                                 contact_head_title: "We will do our best to achieve 100% customer satisfaction.",
                                 contact_head_text: "If you submit an inquiry with your full contact details, we will respond to you as soon as possible following confirmation by the person in charge of the relevant department.",

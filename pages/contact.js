@@ -1,27 +1,25 @@
 import MainLayout from "../components/MainLayout";
-
+import { useRouter} from 'next/router'
+import en from '../locales/en'
+import ru from '../locales/ru'
 function Contact(){
+    const router = useRouter();
+    const { locale } = router
+    const t = locale === 'en' ? en : ru
     return (
         <MainLayout>
             <section className="contact-head">
                 <div className="container ">
                     <div className="grid-2 py-5">
                         <div className="contact-title">
-                            <h1 className="md">Мы делаем все возможное для 100% удовлетворенности клиентов.</h1>
-                            <p>Оставьте запрос и ответственное лицо свяжется с вами в самое ближайшее время.</p>
+                            <h1 className="md">{t.contact_head_title}</h1>
+                            <p>{t.contact_head_text}</p>
                         </div>
                         <div className="contact-title">
-                            <h4>Главный офис во Пусане:</h4>
-                            <p> Адрес: 6F, 226, Асиад-деро , Донае-гу, Пусан, Республика Корея(47837) <br/>
-                                    Тел .: 051-557-6781 <br/>
-                                    Факс: 051-556-0084 <br/>
-                                    E-mail: izaccola@daum.net
-                            </p>
-                                <h4>Офис и склад во Владивостоке: </h4>
-                                <p> Адрес: г. Владивосток, ул. Запорожская 77, офис 627 <br/>
-                                    Тел.:+7-908-961-3591. <br/>
-                                    E-mail: lyuda_kim73@mail.ru
-                                </p>
+                            <h4>{t.contact_busan}</h4>
+                            <p>{t.contact_busan_address}</p>
+                            <h4>{t.contact_russia}</h4>
+                            <p>{t.contact_russian_address}</p>
                             </div>
                             <div className="overlay"></div>
                         </div>
@@ -29,31 +27,31 @@ function Contact(){
             </section>
 
                 <section className="get_in_touch">
-                    <h1 className="title">Оставить запрос</h1>
+                    <h1 className="title">{t.form_title}</h1>
                     <div className="container">
                         <form className="contact-form row">
                             <div className="form-field col-lg-6">
                                 <input className="input-text" type="text" name="name" id="name"/>
-                                <label for="name" className="label">Имя</label>
+                                <label for="name" className="label">{t.name}</label>
                             </div>
                             <div className="form-field col-lg-6">
                                 <input className="input-text" type="email" name="email" id="email"/>
-                                <label for="email" className="label">Электронная почта</label>
+                                <label for="email" className="label">{t.email}</label>
                             </div>
                             <div className="form-field col-lg-6">
                                 <input className="input-text" type="text" name="company" id="company"/>
-                                <label for="company" className="label">Наименование компании</label>
+                                <label for="company" className="label">{t.company}</label>
                             </div>
                             <div className="form-field col-lg-6">
                                 <input className="input-text" type="text" name="phone" id="phone"/>
-                                <label for="phone" className="label">Телефона</label>
+                                <label for="phone" className="label">{t.phone}</label>
                             </div>
                             <div className="form-field col-lg-12">
                                 <input className="input-text" type="text" name="message" id="message"/>
-                                <label for="message" className="label">Ваш запрос</label>
+                                <label for="message" className="label">{t.message}</label>
                             </div>
                             <div className="form-field col-lg-12">
-                                <button className="submit-btn btn" type="submit">Submit</button>
+                                <button className="submit-btn btn" type="submit">{t.send}</button>
                             </div>
                         </form>
                     </div>
