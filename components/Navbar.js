@@ -11,9 +11,29 @@ function MyNavbar() {
     const { locale } = router
     const t = locale === 'en' ? en : ru
     return (
-        <Navbar expand="lg" className="fixed-top">
-            <div className="container">
-            <Navbar><Link href="/"><><img src="./images/mainlogo.png" className="img-fluid" alt="UPKAIT"/>АПКАЙТ</></Link></Navbar>
+        <Navbar expand="lg" className="fixed-top p-0 d-flex justify-content-center">
+            <div className="container mynavbg p-1 m-0">
+                <table id="navbartab">
+                    <tbody>
+                        <tr>
+                            <td>
+                            <Navbar className="p-1"><Link href="/"><img src="./images/mainlogo.png" className="img-fluid" alt="UPKAIT"/></Link></Navbar>
+                            </td>
+                            <td>
+                            <Navbar className="p-0"><p  className="m-0" id="logoname">{t.Navbartitle}</p></Navbar>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UP-GRADED KATUSA
+                            </td>
+                            <td className="pl-1">
+                            INTERNATIONAL TRADE CORPORATION
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

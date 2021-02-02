@@ -4,8 +4,8 @@ export default {
     Product:"Products",
     Recipes:"Recipes",
     Contact:"Contact us",
-    
-     History: "History",
+    Navbartitle:"UPKAIT",
+    History: "History",
     Location: "Location",
     Other: "Other",
 

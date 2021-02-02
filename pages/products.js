@@ -22,7 +22,6 @@ function Products({product,producten}){
     const [active, setActive] = useState(1);
     let items = [];
     var mynum = parseInt(disproduct.results[company].data.item.length/12)+1
-    console.log(mynum)
     for (let number = 1; number <= mynum; number++) {
     items.push(
         <Pagination.Item key={number} active={number === active} onClick={(e)=>setActive(parseInt(e.target.innerText))}>
@@ -39,10 +38,8 @@ function Products({product,producten}){
 
     useEffect(()=>{
         setCompany(0)
+        setActive(1)
     },[locale])
-    useEffect(()=>{
-
-    },[active])
     return(
         <MainLayout>
             <div className="container">
@@ -54,24 +51,16 @@ function Products({product,producten}){
                     <div className="col-2 companyblock">
                         {disproduct.results.map((name,index)=>
                             (<div key={index}>
-                            <button onClick={()=>setCompany(index)} className={company===index ? "active" : ""}>{RichText.render(name.data.item[0].itemcompany)}</button>
+                            <button onClick={()=>{setCompany(index); setActive(1)}} className={company===index ? "active" : ""}>{RichText.render(name.data.item[0].itemcompany)}</button>
                             <hr/>
                             </div>)                     
                         )}
-                        {/* <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
-                        <hr/>
-                        <button onClick={()=>setCompany(1)} className={company===1 ? "active" : ""}>{RichText.render(disproduct.results[1].data.item[0].itemcompany)}</button>
-                        <hr/>  
-                        <button onClick={()=>setCompany(2)} className={company===2 ? "active" : ""}>{RichText.render(disproduct.results[2].data.item[0].itemcompany)}</button>
-                        <hr/>
-                        <button onClick={()=>setCompany(3)} className={company===3 ? "active" : ""}>{RichText.render(disproduct.results[3].data.item[0].itemcompany)}</button>
-                        <hr/> */}
                     </div>
                     <div className="col-1"></div>
                     <div className="col-9 products">  
                         <div className="products">
                         {disproduct.results[company].data.item.map((item,index)=>{
-                            return (<div className={index*active<12*active ? "productcard" : "productcard d-none"}key={index}>
+                            return (<div className={index<12*active&&index>=12*(active-1) ? "productcard" : "productcard d-none"}key={index}>
                                         <a onClick={()=>{
                                             setProductobject(item)
                                             setIsisplayed(true)
@@ -158,7 +147,7 @@ function Products({product,producten}){
                 overflow:hidden;
                 text-align:center;
                 height:200px;
-                width: 180px;
+                width: 240px;
                 padding:12px;
                 border-radius: 4px;
                 border:1px solid rgb(220,220,220, 0.5);

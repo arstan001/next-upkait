@@ -4,6 +4,7 @@ export default{
     Product:"Продукты",
     Recipes:"Рецепты",
     Contact:"Контакты",
+    Navbartitle:"АПКАЙТ",
     
     History: "История",
     Location: "Локация",

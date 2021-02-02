@@ -14,7 +14,9 @@
     padding: 20px;
     margin: 20px;
 }
-
+.takefullwidth{
+    width: 100%;
+}
 .mbtn {
     display: inline-block;
     cursor: pointer;
@@ -32,7 +34,7 @@
     border: 1px #fff solid;
 }
 main{
-    margin-top: 90px;
+    margin-top: 84px;
 }
 .btn-outline:hover {
     background-color: #333;
@@ -338,13 +340,22 @@ code, pre {
 }
 
 /* Navbar */
+#logoname{
+    align-self: center;
+    color:white;
+    font-weight: bold;
+    font-size: 3vmax;
+}
  .main-navbar {
     background-color: var(--primary-color);
 }
 nav a{
     color: #333;
     transition: 0.4s ease-in-out;
-
+}
+.mynavbg{
+    background-color: var(--primary-color);
+    width: 100%;
 }
 nav a:hover{
     color:white;
@@ -355,15 +366,16 @@ nav a:hover{
 .navbar {
     background-color: var(--primary-color);
     min-height: 70px;
-    max-height: 90px;
-    overflow:hidden;
+    max-height: 94px;
 }
 .navbar img{
     display:flex;
-    width: 90px;
+    width: 80px;
 }
-
-
+#navbartab td{
+    font-size: 0.6em;
+    color:white;
+}
 /* Showcase */
 
 /* .showcase::after {
