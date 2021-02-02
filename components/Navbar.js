@@ -13,7 +13,7 @@ function MyNavbar() {
     return (
         <Navbar expand="lg" className="fixed-top">
             <div className="container">
-            <Navbar><Link href="/"><img src="./images/brand.gif"className="img-fluid" alt="UPKAIT"/></Link></Navbar>
+            <Navbar><Link href="/"><><img src="./images/mainlogo.png" className="img-fluid" alt="UPKAIT"/>АПКАЙТ</></Link></Navbar>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

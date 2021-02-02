@@ -19,7 +19,7 @@ function Index() {
                         <Link href="/products"><a className="mbtn btn-outline">{t.titlebuttontext}</a></Link>
                     </div>
                     <div className="showcase-img">
-                        <img src="/images/home-bg.png" className="img-fluid" width="300px" alt="" />
+                        <img src="/images/collection.png" className="img-fluid" alt="" />
                     </div>
                 </div>
 

@@ -56,8 +56,7 @@ function Products({product,producten}){
                             (<div key={index}>
                             <button onClick={()=>setCompany(index)} className={company===index ? "active" : ""}>{RichText.render(name.data.item[0].itemcompany)}</button>
                             <hr/>
-                            </div>)
-                            
+                            </div>)                     
                         )}
                         {/* <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
                         <hr/>
