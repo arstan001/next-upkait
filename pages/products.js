@@ -4,6 +4,7 @@ import { Client } from '../prismic-configuration'
 import Prismic from 'prismic-javascript'
 import { RichText } from 'prismic-reactjs'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Pagination} from 'react-bootstrap'
 import { useRouter} from 'next/router'
 import en from '../locales/en'
 import ru from '../locales/ru'
@@ -11,14 +12,37 @@ function Products({product,producten}){
     const router = useRouter();
     const { locale } = router
     const t = locale === 'en' ? en : ru
-    
-    var disproduct = locale === 'en' ? producten : product
-    useEffect(()=>{
-        setCompany(0)
-    },[locale])
+
     const [company, setCompany] = useState(0)
     const [productobject, setProductobject] = useState({})
     const [isdisplayed, setIsisplayed] = useState(false)
+
+    var disproduct = locale === 'en' ? producten : product
+
+    const [active, setActive] = useState(1);
+    let items = [];
+    var mynum = parseInt(disproduct.results[company].data.item.length/12)+1
+    console.log(mynum)
+    for (let number = 1; number <= mynum; number++) {
+    items.push(
+        <Pagination.Item key={number} active={number === active} onClick={(e)=>setActive(parseInt(e.target.innerText))}>
+        {number}
+        </Pagination.Item>,
+    );
+    }
+
+    const paginationBasic = (
+    <div>
+        <Pagination size="sm">{items}</Pagination>
+    </div>
+    );
+
+    useEffect(()=>{
+        setCompany(0)
+    },[locale])
+    useEffect(()=>{
+
+    },[active])
     return(
         <MainLayout>
             <div className="container">
@@ -29,11 +53,10 @@ function Products({product,producten}){
                 <section className="row">
                     <div className="col-2 companyblock">
                         {disproduct.results.map((name,index)=>
-                            
-                            <div key={index}>
+                            (<div key={index}>
                             <button onClick={()=>setCompany(index)} className={company===index ? "active" : ""}>{RichText.render(name.data.item[0].itemcompany)}</button>
                             <hr/>
-                            </div>
+                            </div>)
                             
                         )}
                         {/* <button onClick={()=>setCompany(0)} className={company===0 ? "active" : ""}>{RichText.render(disproduct.results[0].data.item[0].itemcompany)}</button>
@@ -46,20 +69,24 @@ function Products({product,producten}){
                         <hr/> */}
                     </div>
                     <div className="col-1"></div>
-                    <div className="col-9 products">
-                        
-                        {disproduct.results[company].data.item.map((item,index)=>
-                        <div className="productcard" key={index}>
-                             <a onClick={()=>{
-                                   setProductobject(item)
-                                   setIsisplayed(true)
-                               }}><div className="imagewrapperr">
-                                <img src={item.itemimage.url} alt="loading"/>
-                            </div>
-                           <p>{item.itemtitle[0].text}</p></a>
+                    <div className="col-9 products">  
+                        <div className="products">
+                        {disproduct.results[company].data.item.map((item,index)=>{
+                            return (<div className={index*active<12*active ? "productcard" : "productcard d-none"}key={index}>
+                                        <a onClick={()=>{
+                                            setProductobject(item)
+                                            setIsisplayed(true)
+                                        }}><div className="imagewrapperr">
+                                            <img src={item.itemimage.url} alt="loading"/>
+                                        </div>
+                                        <p>{item.itemtitle[0].text}</p></a>
+                                        </div>)
+                            })}
                         </div>
-                        )}
-                            
+                        <div className="d-flex justify-content-center takefullwidth">
+                        {paginationBasic}                      
+                        
+                        </div>                      
                     </div>
                 </section>
             </div>
@@ -73,7 +100,8 @@ function Products({product,producten}){
                         <header className="myHeader">
                             {isdisplayed===true ? RichText.render(productobject.itemtitle) : ""}
                         </header>
-                        <main>
+                        <main className="m-0">
+                            <div className="tablebg">
                             <table>
                                 <tbody>
                                     <tr>
@@ -94,11 +122,15 @@ function Products({product,producten}){
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </main>
                     </div>
                 </div>
             </div>
         <style jsx>{`
+        .takefullwidth{
+            width:100%;
+        }
             .companyblock{
                 display:block;
                 border-radius: 5px;
@@ -155,18 +187,25 @@ function Products({product,producten}){
                 max-width: 100%;
                 max-height: 100%
             }
+            .tablebg{
+                background-color:rgb(245,245,245);
+                border-radius:10px;
+                width:60%;
+                overflow:hidden;
+                display:flex;
+                justify-content:center;
+            }
             .productdetail{
                 position:fixed;
                 display:flex;
                 justify-content: space-around;
                 background-color:white;
-                top:50%;
-                left:60%;
-                width:800px;
-                height:560px;
-                margin-left:-455px;
-                margin-top:-280px;
+                top:104px;
+                left:0;
+                width:100%;
+                height:90%;
                 border:1px solid  #f3f3f3;
+                z-index:99;
                 border-radius:10px;
             }
             .productdetail .row{
@@ -175,6 +214,18 @@ function Products({product,producten}){
             .productdetail img {
                 max-height:280px;
                 width:auto;
+            }
+            .productdetail table{
+            }
+            .productdetail table tr{
+                border-bottom:0.5px solid rgb(184,184,184);
+            }
+            .productdetail table td{
+                line-height:1.5;
+                padding:10px 30px;
+            }
+            .productdetail table tr:last-child{
+                border-bottom:none;
             }
             .productdetail table tbody tr td:first-of-type{
             
@@ -240,6 +291,7 @@ export async function getServerSideProps(){
         Prismic.Predicates.at("document.type", "products"),
         {lang:'en-us'}
     )
+    console.log(product.results[0].data.item.length)
     return {
         props:{
             product:product,

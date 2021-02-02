@@ -33,7 +33,9 @@
     color:white;
     border: 1px #fff solid;
 }
-
+main{
+    margin-top: 104px;
+}
 .btn-outline:hover {
     background-color: #333;
     color: #fff;
@@ -357,7 +359,6 @@ nav a:hover{
     min-height: 70px;
     overflow:hidden;
 }
-
 
 
 

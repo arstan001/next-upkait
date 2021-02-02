@@ -11,7 +11,7 @@ function MyNavbar() {
     const { locale } = router
     const t = locale === 'en' ? en : ru
     return (
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="fixed-top">
             <div className="container">
             <Navbar><Link href="/"><img src="./images/brand.gif"className="img-fluid" alt="UPKAIT"/></Link></Navbar>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
