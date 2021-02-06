@@ -73,11 +73,11 @@ function Index() {
                     </div>
                     <div className="card">
                         <h4>Obok</h4>
-                        <img src="images/logos/" alt="" />
+                        <img src="images/logos/obok.jpeg" alt="" />
                     </div>
                     <div className="card">
                         <h4>Crown</h4>
-                        <img src="images/logos/crown.png" alt="" />
+                        <img src="images/logos/crownimg.png" alt="" />
                     </div>
                     <div className="card">
                         <h4>Haitai</h4>

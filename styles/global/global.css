@@ -279,8 +279,9 @@ main{
 .pb-3{
     padding: 0 0 2rem 0;
 }
+/* color 32334c / 4366b0 */
 :root {
-    --primary-color: #77bfa3;
+    --primary-color: #ffcc00;  
     --secondary-color: #22223b;
     --dark-color: #333;
     --light-color: #837d7d;
@@ -350,7 +351,7 @@ code, pre {
     background-color: var(--primary-color);
 }
 nav a{
-    color: #333;
+    color: #fff;
     transition: 0.4s ease-in-out;
 }
 .mynavbg{
@@ -378,7 +379,7 @@ nav a:hover{
 }
 /* Showcase */
 
-/* .showcase::after {
+.showcase::after {
     content: "";
     display: block;
     width: 100%;
@@ -387,9 +388,9 @@ nav a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: .7;
+    opacity: .4;
     z-index: 0;
-} */
+}
 
 .showcase {
     position: relative;
@@ -406,7 +407,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     min-height: 500px;
-    background-color:var(--primary-color);
+    background:url('../../public/images/1111.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
