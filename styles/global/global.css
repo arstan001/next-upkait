@@ -36,7 +36,7 @@ html {
     border: 1px #fff solid;
 }
 main{
-    margin-top: 84px;
+    margin-top: 104px;
 }
 .btn-outline:hover {
     background-color: #333;
@@ -368,8 +368,8 @@ nav a:hover{
 }
 .navbar {
     background-color: var(--primary-color);
-    min-height: 70px;
-    max-height: 94px;
+    min-height: 90px;
+    max-height: auto;
 }
 .navbar img{
     display:flex;
@@ -1012,6 +1012,9 @@ section .whyus {
 
 /* Tablets and under */
 @media(max-width: 768px) {
+    main{
+        margin-top: 15%;
+    }
     .grid,
     .showcase .grid,
     .stats .grid,
@@ -1080,6 +1083,9 @@ section .whyus {
 
 /* Mobile */
 @media(max-width: 500px) {
+    main{
+        margin-top: 104px;
+    }
     .about-sub-head .container {
         width: 90%;
     }
