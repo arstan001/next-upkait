@@ -33,7 +33,7 @@ function LanguageSwitcher() {
                   border:none;
               }
               option {
-                  background-color:#77bfa3;
+                  background-color:#ffcc00;
               }
             `}
         </style>
