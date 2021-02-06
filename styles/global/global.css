@@ -5,7 +5,9 @@
     overflow: auto;
     padding: 0 40px;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .card {
     background-color: #fff;
     color: #333;
@@ -351,7 +353,7 @@ code, pre {
     background-color: var(--primary-color);
 }
 nav a{
-    color: #fff;
+    color: black;
     transition: 0.4s ease-in-out;
 }
 .mynavbg{

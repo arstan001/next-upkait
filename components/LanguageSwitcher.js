@@ -26,7 +26,7 @@ function LanguageSwitcher() {
                   outline:none;
                   background-color:transparent;
                   border-radius:1px;
-                  color:white;  
+                  color:black;  
               }
               select:active{
                   outline:none;
