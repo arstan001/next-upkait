@@ -65,7 +65,7 @@ function Products({ product, producten }) {
                   }}
                   className={company === index ? "active" : ""}
                 >
-                  {RichText.render(name.data.item[0].itemcompany)}
+                  {name.data.item[0].itemcompany[0].text.trim()==='J&E' ? 'Others' : RichText.render(name.data.item[0].itemcompany)}
                 </button>
                 <hr />
               </div>
@@ -333,7 +333,7 @@ export async function getServerSideProps() {
   const producten = await Client().query(
     Prismic.Predicates.at("document.type", "products"),
     { lang: "en-us" }
-  );
+  ); 
   return {
     props: {
       product: product,

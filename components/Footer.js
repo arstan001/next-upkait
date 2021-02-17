@@ -2,8 +2,13 @@ import Link from 'next/link'
 // import LanguageSwitcher from '../components/LanguageSwitcher'
 // import {Navbar, Nav} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import en from '../locales/en'
+import { useRouter } from 'next/router'
+import ru from '../locales/ru'
 function Footer(){
+    const router = useRouter();
+    const { locale } = router
+    const t = locale === 'en' ? en : ru
    return(
     <footer className="footer bg-dark py-5">
     <div className="container grid grid-4">
@@ -36,14 +41,14 @@ function Footer(){
                     <li>
                     <Link href='/products'><h4><a>Продукты</a></h4></Link>
                     </li>
-                    <li><Link href={{pathname:'/products', query:{num:0}}}><a>Namyang</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>Nongshim</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:2}}}><a>CJ</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:3}}}><a>Ottogi</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:4}}}><a>Obok</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:5}}}><a>Crown</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:6}}}><a>Haitai</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:7}}}><a>Другие</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:2}}}><a>{t.Namyang}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:0}}}><a>{t.Nongshim}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:6}}}><a>{t.CJ}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:7}}}><a>{t.Ottogi}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:5}}}><a>{t.Obok}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:3}}}><a>{t.Crown}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:4}}}><a>{t.Haitai}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>{t.Others}</a></Link></li>
                 </ul>
             </nav>
         </div>

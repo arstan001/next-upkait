@@ -9,6 +9,14 @@ export default {
     Location: "Location",
     Other: "Other",
 
+    Namyang:"Namyang",
+    Nongshim:"Nongshim",
+    CJ:"CJ",
+    Ottogi:"Ottogi",
+    Obok:"Obok",
+    Crown:"Crown",
+    Haitai:"Haitai",
+    Others:"Others",
 
 
     title: "Korean products",
