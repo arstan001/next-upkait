@@ -36,14 +36,14 @@ function Footer(){
                     <li>
                     <Link href='/products'><h4><a>Продукты</a></h4></Link>
                     </li>
-                    <li><Link href='/'><a>Namyang</a></Link></li>
-                    <li><Link href='/'><a>Nongshim</a></Link></li>
-                    <li><Link href='/'><a>CJ</a></Link></li>
-                    <li><Link href='/'><a>Ottogi</a></Link></li>
-                    <li><Link href='/'><a>Obok</a></Link></li>
-                    <li><Link href='/'><a>Crown</a></Link></li>
-                    <li><Link href='/'><a>Haitai</a></Link></li>
-                    <li><Link href='/'><a>Другие</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:0}}}><a>Namyang</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>Nongshim</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:2}}}><a>CJ</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:3}}}><a>Ottogi</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:4}}}><a>Obok</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:5}}}><a>Crown</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:6}}}><a>Haitai</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:7}}}><a>Другие</a></Link></li>
                 </ul>
             </nav>
         </div>

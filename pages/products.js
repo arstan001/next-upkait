@@ -12,14 +12,13 @@ function Products({ product, producten }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : ru;
-
   const [company, setCompany] = useState(0);
   const [productobject, setProductobject] = useState({});
   const [isdisplayed, setIsisplayed] = useState(false);
 
   var disproduct = locale === "en" ? producten : product;
 
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   let items = [];
   var mynum = parseInt(disproduct.results[company].data.item.length / 12) + 1;
   for (let number = 1; number <= mynum; number++) {
@@ -39,9 +38,8 @@ function Products({ product, producten }) {
       <Pagination size="sm">{items}</Pagination>
     </div>
   );
-
   useEffect(() => {
-    setCompany(0);
+    router.query.num ? setCompany(router.query.num) : setCompany(0);
     setActive(1);
   }, [locale]);
 
@@ -230,6 +228,8 @@ function Products({ product, producten }) {
           .imagewrapperr img {
             width: auto;
             height: auto;
+            min-width:60px;
+            min-height:120px;
             max-width: 100%;
             max-height: 100%;
           }

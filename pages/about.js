@@ -30,7 +30,11 @@ function About() {
                         <h1 className="md">{t.about_sub_title}</h1>
                         <p> {t.about_sub_text1}
                     </p>
-                        <p>{t.about_sub_text2}</p>
+                        <p>{t.about_sub_text2} </p>
+                        <p> {t.about_sub_text3} </p>
+                        <p> {t.about_sub_text4} </p>
+                        <p> {t.about_sub_text5}</p>
+
                     </div>
                 </div>
             </section>
