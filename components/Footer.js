@@ -24,14 +24,13 @@ function Footer(){
             <nav>
                 <ul>
                     <li className="pb-3">
-                        <Link href='/'><h4><a>Главная</a></h4></Link>
+                        <Link href='/'><h4><a>{t.Home}</a></h4></Link>
                     </li>
                     <li>
-                        <Link href='/'><h4><a>О нас</a> </h4></Link>
+                        <Link href='/about'><h4><a>{t.About}</a> </h4></Link>
                     </li>
-                    <li><Link href='/'><a >О компании</a></Link></li>
-                    <li><Link href='/'><a >История</a></Link></li>
-                    <li><Link href='/'><a >Локация</a></Link></li>
+                    <li><Link href='/about#history'><a >{t.History}</a></Link></li>
+                    <li><Link href='/about#map'><a >{t.Location}</a></Link></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +38,7 @@ function Footer(){
             <nav>
                 <ul>
                     <li>
-                    <Link href='/products'><h4><a>Продукты</a></h4></Link>
+                    <Link href='/products'><h4><a>{t.Product}</a></h4></Link>
                     </li>
                     <li><Link href={{pathname:'/products', query:{num:2}}}><a>{t.Namyang}</a></Link></li>
                     <li><Link href={{pathname:'/products', query:{num:0}}}><a>{t.Nongshim}</a></Link></li>
@@ -48,7 +47,7 @@ function Footer(){
                     <li><Link href={{pathname:'/products', query:{num:5}}}><a>{t.Obok}</a></Link></li>
                     <li><Link href={{pathname:'/products', query:{num:3}}}><a>{t.Crown}</a></Link></li>
                     <li><Link href={{pathname:'/products', query:{num:4}}}><a>{t.Haitai}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>{t.Others}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>{t.Other}</a></Link></li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +55,7 @@ function Footer(){
             <nav>
                 <ul>
                     <li>
-                        <Link href='/recipes'><h4><a>Рецепты</a></h4></Link>
+                        <Link href='/recipes'><h4><a>{t.Recipes}</a></h4></Link>
                     </li>
                 </ul>
             </nav>
@@ -65,7 +64,7 @@ function Footer(){
             <nav>
                 <ul>
                     <li>
-                        <Link href='/contact'><h4> <a>Контакты</a></h4></Link>
+                        <Link href='/contact'><h4> <a>{t.Contact}</a></h4></Link>
                     </li>
                 </ul>
             </nav>

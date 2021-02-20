@@ -32,14 +32,14 @@ function About() {
                     </p>
                         <p>{t.about_sub_text2} </p>
                         <p> {t.about_sub_text3} </p>
-                        <p> {t.about_sub_text4} </p>
-                        <p> {t.about_sub_text5}</p>
+                        <p id="history"> {t.about_sub_text4} </p>
+                        <p > {t.about_sub_text5}</p>
 
                     </div>
                 </div>
             </section>
-            <section className="timeline">
-                <h1>{t.History}</h1>
+            <section className="timeline" >
+                <h1 >{t.History}</h1>
                 <div className="container">
                     <div className="timeline-body">
                         <div className="timeline-item">
@@ -176,7 +176,7 @@ function About() {
             <section className="about-sub-head bg-light py-3">
                 <div className="container grid">
                     <div>
-                        <p>
+                        <p id="map">
                             {t.busan_address}
                         </p>
                             <div className=" bg-light p-3">
