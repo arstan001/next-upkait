@@ -17,9 +17,13 @@ function Contact(){
                         </div>
                         <div className="contact-title">
                             <h4>{t.contact_busan}</h4>
-                            <p>{t.contact_busan_address}</p>
+                            <p>{t.contact_busan_address1}</p>
+                            <p>{t.contact_busan_address2}</p>
+
                             <h4>{t.contact_russia}</h4>
-                            <p>{t.contact_russian_address}</p>
+                            <p>{t.contact_russian_address1}</p>
+                            <p>{t.contact_russian_address2}</p>
+
                             </div>
                             <div className="overlay"></div>
                         </div>
