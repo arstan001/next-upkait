@@ -727,9 +727,9 @@ section .whyus {
   margin: 5px auto;
 }
 
-.about-map img {
-  width: 300px;
-}
+/* .about-map img {
+  min-width: 500px;
+} */
 
 /* product */
 .companyblock button {

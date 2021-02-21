@@ -289,6 +289,7 @@ function Products({ product, producten }) {
             justify-content: center;
             background-color: transparent;
             border: none;
+            z-index: 100;
           }
           @media only screen and (max-width: 600px) {
             .productdetail {
@@ -296,17 +297,18 @@ function Products({ product, producten }) {
               display: flex;
               justify-content: space-around;
               background-color: white;
-              top: 50%;
+              top: 55%;
               left: 60%;
               width: 400px;
-              height: 560px;
+              min-height: 600px;
               margin-left: -240px;
               margin-top: -280px;
               border: 1px solid #f3f3f3;
               border-radius: 10px;
             }
             .productdetail .row {
-              width: 100%;
+              width: 100vw;
+              height: 90vh;
             }
             .productdetail img {
               max-height: 280px;
@@ -318,6 +320,9 @@ function Products({ product, producten }) {
             .productdetail main {
               display: flex;
               justify-content: center;
+            }
+            main .tablebg {
+              min-width: 300px;
             }
           }
         `}
