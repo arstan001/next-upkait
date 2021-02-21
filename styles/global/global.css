@@ -547,6 +547,9 @@ section .whyus {
   text-align: center;
   margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
+  width: 100px;
+  height: 150px;
+  position: relative;
 }
 
 .companies .card h4 {
@@ -561,6 +564,9 @@ section .whyus {
 .companies .card img {
   width: 50px;
   align-self: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
 }
 
 .fa-facebook:hover,
