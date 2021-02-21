@@ -213,7 +213,7 @@ function Products({ product, producten }) {
           }
           .productcard a:hover {
             font-weight: bold;
-            color: black;
+            color: #333;
           }
           .imagewrapperr {
             position: relative;
@@ -285,7 +285,7 @@ function Products({ product, producten }) {
             font-size: 24px;
             align-items: center;
             display: flex;
-            color: black;
+            color: #333;
             justify-content: center;
             background-color: transparent;
             border: none;

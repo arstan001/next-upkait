@@ -349,7 +349,7 @@ pre {
   background-color: var(--primary-color);
 }
 nav a {
-  color: black;
+  color: var(--dark-color);
   transition: 0.4s ease-in-out;
 }
 .mynavbg {
