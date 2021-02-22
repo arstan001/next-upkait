@@ -849,6 +849,10 @@ section .whyus {
   text-align: start;
 }
 
+.recipes-main .recipe p {
+  margin-bottom: 8px;
+}
+
 /* .recipes-head .overlay {
     background: #0000008a;
     width: 100%;
@@ -1139,5 +1143,8 @@ section .whyus {
   .about-sub-head,
   .about-sub-head p {
     text-align: center;
+  }
+  .recipes-main p {
+    text-align: left;
   }
 }

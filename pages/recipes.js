@@ -23,9 +23,15 @@ function Recipes(){
             <div className="card bg-light p-3">
                 <img src="./images/recipes/recipe3.jpg" className="img-fluid" alt=""/>
             </div>
-            <div className="card">
+            <div className="card recipe">
                 <h3>{t.recipe1_title}</h3>
-                <p>{t.recipe1_text}</p>
+                <p>{t.recipe1_ing}</p>
+                <p>{t.recipe1_text1}</p>
+                <p>{t.recipe1_text2}</p>
+                <p>{t.recipe1_text3}</p>
+                <p>{t.recipe1_text4}</p>
+                <p>{t.recipe1_text5}</p>
+
             </div>
         </div>
     </section>
@@ -34,9 +40,28 @@ function Recipes(){
             <div className="card bg-light p-3">
                 <img src="./images/recipes/recipe1.jpg" className="img-fluid"alt=""/>
             </div>
-            <div className="card">
+            <div className="card recipe">
                 <h3>{t.recipe2_title}</h3>
-                <p>{t.recipe2_text}</p>
+                <p>{t.recipe2_ing}</p>
+                <p>{t.recipe2_text1}</p>
+                <p>{t.recipe2_text2}</p>
+                <p>{t.recipe2_text3}</p>
+                <p>{t.recipe2_text4}</p>
+
+            </div>
+        </div>
+    </section>
+    <section className="recipes-main my-4">
+        <div className="container grid">
+            <div className="card bg-light p-3">
+                <img src="./images/recipes/rabokki.jpg" className="img-fluid" alt=""/>
+            </div>
+            <div className="card recipe">
+                <h3>{t.recipe3_title}</h3>
+                <p>{t.recipe3_text1}</p>
+                <p>{t.recipe3_text2}</p>
+                <p>{t.recipe3_text3}</p>
+                <p>{t.recipe3_text4}</p>
             </div>
         </div>
     </section>
@@ -45,30 +70,32 @@ function Recipes(){
             <div className="card bg-light p-3">
                 <img src="./images/recipes/recipe2.png" className="img-fluid" alt=""/>
             </div>
-            <div className="card">
-                <h3>{t.repice3_title}</h3>
-                <p>{t.recipe3_text}</p>
-                <p>{t.recipe33_text}</p>
+            <div className="card recipe">
+                <h3>{t.recipe4_title}</h3>
+                <p>{t.recipe4_text1}</p>
+                <p>{t.recipe4_text2}</p>
+                <p>{t.recipe4_text3}</p>
+                <p>{t.recipe4_text4}</p>
             </div>
         </div>
     </section>
     <section className="recipes-main my-4">
         <div className="container grid">
             <div className="card bg-light p-3">
-                <img src="./images/recipes/recipe3.jpg" className="img-fluid" alt=""/>
+                <img src="./images/recipes/kimchi.png" className="img-fluid" alt=""/>
             </div>
             <div className="card">
                 <h3>{t.recipe0_title}</h3>
-                <h4>{t.recipe4_title}</h4>
-                <p>{t.recipe4_text}</p>
-                <h4>{t.recipe5_title}</h4>
-                <p>{t.recipe5_text}</p>
-                <h4>{t.recipe6_title}</h4>
-                <p>{t.recipe6_text}</p>
-                <h4>{t.recipe7_title}</h4>
-                <p>{t.recipe7_text}</p>
-                <h4>{t.recipe8_title}</h4>
-                <p>{t.recipe8_text}</p>
+                <h5>{t.recipe01_title}</h5>
+                <p>{t.recipe01_text}</p>
+                <h5>{t.recipe02_title}</h5>
+                <p>{t.recipe02_text}</p>
+                <h5>{t.recipe03_title}</h5>
+                <p>{t.recipe03_text}</p>
+                <h5>{t.recipe04_title}</h5>
+                <p>{t.recipe04_text}</p>
+                <h5>{t.recipe05_title}</h5>
+                <p>{t.recipe05_text}</p>
             </div>
         </div>
     </section>
