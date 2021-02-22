@@ -279,7 +279,7 @@ main {
 }
 /* color 32334c / 4366b0 */
 :root {
-  --primary-color: #ffcc00;
+  --primary-color: #333;
   --secondary-color: #22223b;
   --dark-color: #333;
   --light-color: #837d7d;
@@ -341,7 +341,7 @@ pre {
 /* Navbar */
 #logoname {
   align-self: center;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 3vmax;
 }
@@ -349,7 +349,7 @@ pre {
   background-color: var(--primary-color);
 }
 nav a {
-  color: var(--dark-color);
+  color: #fff;
   transition: 0.4s ease-in-out;
 }
 .mynavbg {
@@ -381,20 +381,20 @@ nav a:active {
 }
 #navbartab td {
   font-size: 0.6em;
-  color: white;
+  color: #fff;
 }
-/* Showcase */
+/* Showcase #48cae4 5dd39e*/
 
 .showcase::after {
   content: '';
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgb(218, 208, 208);
+  background-color: #48cae4;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
+  opacity: 0.8;
   z-index: 0;
 }
 
@@ -411,13 +411,14 @@ nav a:active {
   display: flex;
   align-items: center;
   min-height: 500px;
-  background: url('../../public/images/busan.jpg');
+  background: url('../../public/images/bg8.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   width: 100%;
   position: relative;
+  color: #000;
 }
 
 .showcase .showcase-text {
