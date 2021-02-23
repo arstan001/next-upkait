@@ -279,7 +279,7 @@ main {
 }
 /* color 32334c / 4366b0 /4a4e69*/
 :root {
-  --primary-color: #24272b;
+  --primary-color: #002855;
   --secondary-color: #22223b;
   --dark-color: #333;
   --light-color: #837d7d;
@@ -383,6 +383,7 @@ nav a:active {
   font-size: 0.6em;
   color: #fff;
 }
+
 /* Showcase #48cae4 5dd39e  a2d2ff*/
 
 .showcase::after {
