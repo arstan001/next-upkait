@@ -16,6 +16,7 @@ export default {
     Obok:"Obok",
     Crown:"Crown",
     Haitai:"Haitai",
+    Taeyang: "Taeyang",
     Others:"Others",
 
 

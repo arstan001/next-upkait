@@ -40,14 +40,15 @@ function Footer(){
                     <li>
                     <Link href='/products'><h4><a>{t.Product}</a></h4></Link>
                     </li>
+                    <li><Link href={{pathname:'/products', query:{num:0}}}><a>{t.Ottogi}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>{t.Nongshim}</a></Link></li>
                     <li><Link href={{pathname:'/products', query:{num:2}}}><a>{t.Namyang}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:0}}}><a>{t.Nongshim}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:6}}}><a>{t.CJ}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:7}}}><a>{t.Ottogi}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:5}}}><a>{t.Obok}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:3}}}><a>{t.Crown}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:4}}}><a>{t.Haitai}</a></Link></li>
-                    <li><Link href={{pathname:'/products', query:{num:1}}}><a>{t.Other}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:3}}}><a>{t.Obok}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:4}}}><a>{t.CJ}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:5}}}><a>{t.Haitai}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:6}}}><a>{t.Crown}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:7}}}><a>{t.Taeyang}</a></Link></li>
+                    <li><Link href={{pathname:'/products', query:{num:8}}}><a>{t.Other}</a></Link></li>
                 </ul>
             </nav>
         </div>

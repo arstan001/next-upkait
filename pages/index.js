@@ -32,11 +32,11 @@ function Index() {
                 </div>
             </section>
 
-            <section className="cli">
+            {/* <section className="cli">
                 <div className="container grid">
 
                 </div>
-            </section>
+            </section> */}
 
             <section className="whyus my-5 py-5">
                 <div className="container grid">

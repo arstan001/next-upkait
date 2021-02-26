@@ -35,6 +35,9 @@ function LanguageSwitcher() {
               option {
                   background-color:#ffcc00;
               }
+              select:hover {
+                  cursor:pointer;
+              }
             `}
         </style>
         </>

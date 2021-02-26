@@ -31,6 +31,8 @@ function Recipes(){
                 <p>{t.recipe1_text3}</p>
                 <p>{t.recipe1_text4}</p>
                 <p>{t.recipe1_text5}</p>
+                <p>{t.recipe1_text6}</p>
+
 
             </div>
         </div>
@@ -58,10 +60,14 @@ function Recipes(){
             </div>
             <div className="card recipe">
                 <h3>{t.recipe3_title}</h3>
+                <h6>{t.recipe3_title2}</h6>
+                <p>{t.recipe3_ing}</p>
                 <p>{t.recipe3_text1}</p>
                 <p>{t.recipe3_text2}</p>
                 <p>{t.recipe3_text3}</p>
                 <p>{t.recipe3_text4}</p>
+                <p>{t.recipe3_text5}</p>
+
             </div>
         </div>
     </section>
@@ -72,6 +78,8 @@ function Recipes(){
             </div>
             <div className="card recipe">
                 <h3>{t.recipe4_title}</h3>
+                <h6>{t.recipe4_title2}</h6>
+                <p>{t.recipe4_ing}</p>
                 <p>{t.recipe4_text1}</p>
                 <p>{t.recipe4_text2}</p>
                 <p>{t.recipe4_text3}</p>
