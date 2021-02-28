@@ -5,7 +5,6 @@ import { useRouter} from 'next/router'
 import en from '../locales/en'
 import ru from '../locales/ru'
 
-import GoMap from '../components/MyMap'
 
 
 function About() {
