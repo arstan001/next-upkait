@@ -333,11 +333,12 @@ function Products({ product, producten }) {
 
 export async function getServerSideProps() {
   const product = await Client().query(
-    Prismic.Predicates.at("document.type", "products")
+    Prismic.Predicates.at("document.type", "products"),{orderings : '[document.first_publication_date]'}
   );
   const producten = await Client().query(
     Prismic.Predicates.at("document.type", "products"),
-    { lang: "en-us" }
+    { lang: "en-us",
+    orderings : '[document.first_publication_date]' }
   ); 
   return {
     props: {
