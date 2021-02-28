@@ -745,6 +745,7 @@ section .whyus {
 } */
 
 /* product */
+
 .companyblock button {
   background-color: transparent;
   border: none;
@@ -752,7 +753,11 @@ section .whyus {
 .companyblock .active h1 {
   font-weight: bold;
 }
+.companyblock p{
+  text-transform: uppercase;
+}
 .companyblock h1 {
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: normal;
 }

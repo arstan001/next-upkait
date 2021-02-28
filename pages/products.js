@@ -65,7 +65,7 @@ function Products({ product, producten }) {
                   }}
                   className={company === index ? "active" : ""}
                 >
-                  {name.data.item[0].itemcompany[0].text.trim()==='J&E' ? 'Others' : RichText.render(name.data.item[0].itemcompany)}
+                  {name.data.item[0].itemcompany[0].text.trim()==='J&E' ? 'OTHERS' : RichText.render(name.data.item[0].itemcompany)}
                 </button>
                 <hr />
               </div>
