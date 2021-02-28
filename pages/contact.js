@@ -6,6 +6,9 @@ function Contact(){
     const router = useRouter();
     const { locale } = router
     const t = locale === 'en' ? en : ru
+    const handleSubmit = ()=>{
+        
+    }
     return (
         <MainLayout>
             <section className="contact-head">
@@ -33,25 +36,25 @@ function Contact(){
                 <section className="get_in_touch">
                     <h1 className="title">{t.form_title}</h1>
                     <div className="container">
-                        <form className="contact-form row">
+                        <form className="contact-form row" onSubmit={(e)=>handleSubmit}>
                             <div className="form-field col-lg-6">
-                                <input className="input-text" type="text" name="name" id="name"/>
+                                <input className="input-text" type="text" name="name" id="name" required/>
                                 <label for="name" className="label">{t.name}</label>
                             </div>
                             <div className="form-field col-lg-6">
-                                <input className="input-text" type="email" name="email" id="email"/>
+                                <input className="input-text" type="email" name="email" id="email" required/>
                                 <label for="email" className="label">{t.email}</label>
                             </div>
                             <div className="form-field col-lg-6">
-                                <input className="input-text" type="text" name="company" id="company"/>
+                                <input className="input-text" type="text" name="company" id="company" required/>
                                 <label for="company" className="label">{t.company}</label>
                             </div>
                             <div className="form-field col-lg-6">
-                                <input className="input-text" type="text" name="phone" id="phone"/>
+                                <input className="input-text" type="text" name="phone" id="phone" required/>
                                 <label for="phone" className="label">{t.phone}</label>
                             </div>
                             <div className="form-field col-lg-12">
-                                <input className="input-text" type="text" name="message" id="message"/>
+                                <input className="input-text" type="text" name="message" id="message" required/>
                                 <label for="message" className="label">{t.message}</label>
                             </div>
                             <div className="form-field col-lg-12">
