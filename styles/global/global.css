@@ -876,7 +876,14 @@ section .whyus {
 } */
 
 /*Contact */
-
+.error{
+  left:50%;
+  color:red;
+}
+.success{
+  left:50%;
+  color:green;
+}
 .contact-head::after {
   content: '';
   display: block;

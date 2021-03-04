@@ -164,23 +164,24 @@ function Contact() {
             </div>
 
             <div className="form-field col-lg-12">
-              <button type="submit" disabled={status.submitting} name="submit" className="submit-btn btn">
+              <button type="submit" disabled={status.submitting} className="submit-btn btn">
                 {!status.submitting
                   ? !status.submitted
                     ? 'Submit'
                     : 'Submitted'
                   : 'Submitting...'}
               </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      {status.info.error && (
+              {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
       )}
       {!status.info.error && status.info.msg && (
         <div className="success">{status.info.msg}</div>
       )}
+            </div>
+          </form>
+        </div>
+      </section>
+      
     </MainLayout>
   )
 }
