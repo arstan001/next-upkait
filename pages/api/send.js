@@ -13,11 +13,13 @@ export default async function(req, res) {
     html: `<p>Company Name: ${company} <br> Name: ${name} <br>Mobile Phone: ${phone}<br> Message: ${message}</p>`
   }
 
-  try {
+  // try {
     await sgMail.send(content)
+
     res.status(200).send('Message sent successfully.')
-  } catch (error) {
-    console.log('ERROR', error)
-    res.status(400).send('Message not sent.')
-  }
+    return
+    // catch (error) {
+    // console.log('ERROR', error)
+    // res.status(400).send('Message not sent.')
+  // }
 }
