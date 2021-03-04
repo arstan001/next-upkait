@@ -65,7 +65,7 @@ function Contact() {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(inputs)
-    }).then(console.log("hello"))
+    })
     const text = await res.text()
     handleResponse(res.status, text)
   }
