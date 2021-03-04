@@ -102,59 +102,69 @@ function Contact() {
               <input
                 id="name"
                 type="text"
+                name="name"
                 onChange={handleOnChange}
                 required
                 value={inputs.name}
                 className="input-text"
               />
               <label htmlFor="name" className="label">{t.name}</label>
-
             </div>
+
           <div className="form-field col-lg-6">
-            <label htmlFor="email" className="label">{t.email}</label>
             <input
               className="input-text"
               id="email"
               type="email"
+              name="email"
               onChange={handleOnChange}
               required
               value={inputs.email}
             />
+            <label htmlFor="email" className="label">{t.email}</label>
             </div>
+
             <div className="form-field col-lg-6">
-            <label htmlFor="company" className="label">{t.company}</label>
             <input
               className="input-text"
               id="company"
               type="text"
+              name="company"
               onChange={handleOnChange}
               required
               value={inputs.company}
             />
+             <label htmlFor="company" className="label">{t.company}</label>
             </div>
+
             <div className="form-field col-lg-6">
-            <label htmlFor="phone" className="label">{t.phone}</label>
             <input
               className="input-text"
               id="phone"
               type="number"
+              name="phone"
               onChange={handleOnChange}
               required
               value={inputs.phone}
-            /></div>
+            />
+            <label htmlFor="phone" className="label">{t.phone}</label>
+            </div>
+
             <div className="form-field col-lg-6">
-            <label htmlFor="message" className="label">{t.message}</label>
             <input
             className="input-text"
               id="message"
+              name="message"
               onChange={handleOnChange}
               required
               type="text"
               value={inputs.message}
             />
+            <label htmlFor="message" className="label">{t.message}</label>
             </div>
+
             <div className="form-field col-lg-12">
-              <button type="submit" disabled={status.submitting} className="submit-btn btn">
+              <button type="submit" disabled={status.submitting} name="submit" className="submit-btn btn">
                 {!status.submitting
                   ? !status.submitted
                     ? 'Submit'
