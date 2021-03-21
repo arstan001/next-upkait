@@ -307,6 +307,19 @@ function Products({ product, producten }) {
             border: none;
             z-index: 100;
           }
+          @media only screen and (max-width: 768px) {
+
+            .productdetail {
+              width: 100%;
+            }
+            .tablebg {
+              width: 100%;
+            }
+            .productdetail img {
+              max-height: 240px;
+              // width: 60% !important;
+            }
+          }
           @media only screen and (max-width: 600px) {
             .productdetail {
               position: fixed;
