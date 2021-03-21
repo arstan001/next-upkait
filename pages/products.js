@@ -56,7 +56,7 @@ function Products({ product, producten }) {
         </header>
         <section className="row">
           <div className="col-2 companyblock">
-            {disproduct.results.map((name, index) => (
+            {locale === "en" ? producten.results.map((name, index) => (
               <div key={index}>
                 <button
                   onClick={() => {
@@ -69,7 +69,23 @@ function Products({ product, producten }) {
                 </button>
                 <hr />
               </div>
-            ))}
+            ))
+          :
+          product.results.map((name, index) => (
+            <div key={index}>
+              <button
+                onClick={() => {
+                  setCompany(index);
+                  setActive(1);
+                }}
+                className={company === index ? "active" : ""}
+              >
+                {name.data.item[0].itemcompany[0].text.trim()==='J&E' ? 'ДРУГИЕ' : RichText.render(name.data.item[0].itemcompany)}
+              </button>
+              <hr />
+            </div>
+          ))
+          }
           </div>
           <div className="col-1"></div>
           <div className="col-9 products">

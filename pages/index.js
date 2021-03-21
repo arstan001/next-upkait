@@ -55,31 +55,31 @@ function Index() {
                 <h2 className="md text-center my-2" >{t.companytitle}</h2>
 
                 <div className="container flex">
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:2}})}>
                         <h4>Namyang</h4>
                         <img src="/images/logos/namyang.png" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card"  onClick={()=>router.push({pathname:'/products', query:{num:1}})}>
                         <h4>Nongshim</h4>
                         <img src="images/logos/nongshim.png" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:4}})}>
                         <h4>CJ</h4>
                         <img src="images/logos/CJ.png" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:0}})}>
                         <h4>Ottogi</h4>
                         <img src="images/logos/ottogi.png" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:3}})}>
                         <h4>Obok</h4>
                         <img src="images/logos/obok.jpeg" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:6}})}>
                         <h4>Crown</h4>
                         <img src="images/logos/crownimg.png" alt="" />
                     </div>
-                    <div className="card">
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:5}})}>
                         <h4>Haitai</h4>
                         <img src="images/logos/haitai.png" alt="" />
                     </div>
