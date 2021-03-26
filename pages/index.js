@@ -4,6 +4,19 @@ import MainLayout from '../components/MainLayout'
 import en from '../locales/en'
 import ru from '../locales/ru'
 import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-elastic-carousel'; 
+import Item from '../components/Item'
+
+
+const breakPoints = [
+    {width:1, itemToShow: 1},
+    {width: 550, itemsToShow:2},
+    {width: 768, itemsToShow: 3},
+    {width: 1200, itemsToShow: 4}
+
+];
+
 
 function Index() {
     const router = useRouter();
@@ -19,7 +32,49 @@ function Index() {
                         <Link href="/products"><a className="mbtn btn-outline">{t.titlebuttontext}</a></Link>
                     </div>
                     <div className="showcase-img">
-                        <img src="/images/collection.png" className="img-fluid" alt="" />
+                        <Carousel breakPoints={breakPoints}>
+                            <Item><img src="/images/collection.png" className="image-fluid" alt="" /></Item>
+                            <Item><img src="/images/collection.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/collection.png" className=" d-block w-100" alt="" /></Item>
+
+
+                        </Carousel>
+                        {/* <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                            <ol className="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <div className="container1">
+                                        <img src="/images/collection.png" className=" d-block w-100" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item ">
+                                        <div className="container">
+                                        <img src="/images/bg7.jpg" className=" d-block w-100" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item ">
+                                        <div className="container">
+                                        <img src="/images/collection.png" className="d-block w-100" alt="" />
+                                        </div>
+                                    </div>
+                                   
+                                </div> */}
+                            {/* <a href="#myCarousel" className="carousel-control-prev" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a href="#myCarousel" className="carousel-control-next" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a> */}
+
+{/*                             
+                        </div>                  */}
+                        
                     </div>
                 </div>
 
@@ -85,6 +140,25 @@ function Index() {
                     </div>
                 </div>
             </section>
+
+            <style jsx>
+                {`
+                
+                .carousel-item {
+                    height: 20rem;
+                    position: relative;
+                }
+
+                .container1 {
+                    position:absolute;
+                    botton: 0;
+                    left: 0;
+                    right: 0; 
+                    padding-bottom: 10px;
+                }
+                
+                `}
+            </style>
         </MainLayout>
         
     )
