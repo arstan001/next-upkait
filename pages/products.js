@@ -41,7 +41,7 @@ function Products({ product, producten }) {
   useEffect(() => {
     router.query.num ? setCompany(router.query.num) : setCompany(0);
     setActive(1);
-  }, [locale]);
+  }, [locale, router.query.num]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
