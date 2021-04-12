@@ -445,13 +445,13 @@ nav a:active {
 }
 
 /* .showcase-img img {
-    position: relative;
-    top: 60px;
-    height: 400px;
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-    justify-self:self-end;
+  position: relative;
+  top: 60px;
+  height: 200px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: self-end;
 } */
 
 .showcase .grid {
@@ -753,7 +753,7 @@ section .whyus {
 .companyblock .active h1 {
   font-weight: bold;
 }
-.companyblock p{
+.companyblock p {
   text-transform: uppercase;
 }
 .companyblock h1 {
@@ -876,13 +876,13 @@ section .whyus {
 } */
 
 /*Contact */
-.error{
-  left:50%;
-  color:red;
+.error {
+  left: 50%;
+  color: red;
 }
-.success{
-  left:50%;
-  color:green;
+.success {
+  left: 50%;
+  color: green;
 }
 .contact-head::after {
   content: '';

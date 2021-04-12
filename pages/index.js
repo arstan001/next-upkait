@@ -33,9 +33,13 @@ function Index() {
                     </div>
                     <div className="showcase-img">
                         <Carousel breakPoints={breakPoints}>
-                            <Item><img src="/images/collection.png" className="image-fluid" alt="" /></Item>
-                            <Item><img src="/images/collection.png" className=" d-block w-100" alt="" /></Item>
-                            <Item><img src="/images/collection.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/OTTOGI.png" className="d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/NONGSHIM.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/NAMYANG2.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/OBOK2.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/CJ.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/HAITAI CRWON.png" className=" d-block w-100" alt="" /></Item>
+                            <Item><img src="/images/newImages/기타2.png" className=" d-block w-100" alt="" /></Item>
 
 
                         </Carousel>
