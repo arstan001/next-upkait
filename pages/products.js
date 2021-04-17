@@ -326,14 +326,16 @@ function Products({ product, producten }) {
               display: flex;
               justify-content: space-around;
               background-color: white;
-              top: 55%;
-              left: 60%;
-              width: 400px;
-              min-height: 600px;
-              margin-left: -240px;
-              margin-top: -280px;
+              top: 0;
+              height:100% !important;
+              width:100% !important;
+              left: 0;
+              // min-height: 600px;
+              // margin-left: -240px;
+              // margin-top: -280px;
+              z-index:99999;
               border: 1px solid #f3f3f3;
-              border-radius: 10px;
+              border-radius: 0;
             }
             .productdetail .row {
               width: 100vw;

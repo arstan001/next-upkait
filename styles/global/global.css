@@ -384,6 +384,9 @@ nav a:active {
 .navbar img:hover {
   cursor: pointer;
 }
+.navbar-toggler-icon {
+  background-image: none !important;
+}
 #navbartab td {
   font-size: 0.6em;
   color: #fff;

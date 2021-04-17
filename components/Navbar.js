@@ -33,7 +33,12 @@ function MyNavbar() {
                         </tr>
                     </tbody>
                 </table>     
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" children={
+                <>
+                    <div style={{background:'white', width:24, height:3, marginBottom:6, borderRadius:2, marginTop:4}}/>
+                    <div style={{background:'white', width:24, height:3, marginBottom:6, borderRadius:2}}/>
+                    <div style={{background:'white', width:24, height:3, borderRadius:2, marginBottom:4}}/>
+                </>}/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav className="mx-3"><Link href={'/'}><a>{t.Home}</a></Link></Nav>
