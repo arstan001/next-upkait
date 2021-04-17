@@ -167,16 +167,16 @@ function Contact() {
               <button type="submit" disabled={status.submitting} className="submit-btn btn">
                 {!status.submitting
                   ? !status.submitted
-                    ? 'Submit'
-                    : 'Submitted'
-                  : 'Submitting...'}
+                    ? t.Submit
+                    : t.Submitted
+                  : t.Submitting}
               </button>
               {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
       )}
-      {!status.info.error && status.info.msg && (
+      {/* {!status.info.error && status.info.msg && (
         <div className="success">{status.info.msg}</div>
-      )}
+      )} */}
             </div>
           </form>
         </div>

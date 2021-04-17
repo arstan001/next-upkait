@@ -1,4 +1,8 @@
 export default{
+    Submit:'Отправить',
+    Submitted:'Отправлено',
+    Submitting:'Отправляется...',
+
     Home:"Главная",
     About:"О нас",
     Product:"Продукты",

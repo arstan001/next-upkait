@@ -369,7 +369,7 @@ export async function getServerSideProps() {
     { lang: "en-us",
     orderings : '[document.last_publication_date]' }
   ); 
-  // console.log(product.results[0].slugs)
+  console.log(product.results[0])
   return {
     props: {
       product: product,

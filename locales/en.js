@@ -1,4 +1,8 @@
 export default {
+    Submit:'Submit',
+    Submitted:'Submitted',
+    Submitting:'Submitting...',
+
     Home:"Home",
     About:"About",
     Product:"Products",
