@@ -88,11 +88,11 @@ export default {
                                 timetitle14: "Branch in Russia",
                                 timetitle14_text: "Opening a branch in Russia (Vladivostok).",
                                 
-                                busan_office: "Head office in Busan",
+                                busan_office: "Busan Head Office",
                                 busan_address1: "Address: 6F, 226, Asiad-daero, Dongnae-gu, Busan, Republic of Korea(47837)",
                                 busan_address2: "Tel: 051-557-6781, Fax: 051-556-0084, Email: izaccola@daum.net",
                                 russian_office: "Office and warehouse in Vladivostok",
-                                russian_address1: "Address: Vladivostok, st. Aleutskaya 51, 39 , Russian Federation",
+                                russian_address1: "Address: Vladivostok, st. Zaporozhskaya 77, office 627, Russian Federation",
                                 russian_address2: "Tel: + 7-908-961-3591, Email: lyuda_kim73@mail.ru",
 
                                 category: "Category",
