@@ -33,13 +33,13 @@ function Index() {
                     </div>
                     <div className="showcase-img">
                         <Carousel showArrows={false} enableAutoPlay={true} autoPlaySpeed={2500}>
-                            <Item><img src="/images/newImages/OTTOGI.png" style={{width:600}} alt="" /></Item>
-                            <Item><img src="/images/newImages/NONGSHIM.png" style={{width:600}}  alt="" /></Item>
-                            <Item><img src="/images/newImages/NAMYANG2.png" style={{width:530}}  alt="" /></Item>
-                            <Item><img src="/images/newImages/OBOK2.png" style={{width:560}}  alt="" /></Item>
-                            <Item><img src="/images/newImages/CJ.png" style={{width:600}}  alt="" /></Item>
-                            <Item><img src="/images/newImages/HAITAI CRWON.png" style={{width:600}}  alt="" /></Item>
-                            <Item><img src="/images/newImages/기타2.png" style={{width:600}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/OTTOGI.png" className='indexImage' style={{width:800}} alt="" /></Item>
+                            <Item><img src="/images/newImages/NONGSHIM.png" className='indexImage' style={{width:800}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/NAMYANG2.png" className='indexImage' style={{width:730}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/OBOK2.png" className='indexImage' style={{width:760}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/CJ.png" className='indexImage' style={{width:800}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/HAITAI CRWON.png" className='indexImage' style={{width:800}}  alt="" /></Item>
+                            <Item><img src="/images/newImages/기타2.png" className='indexImage' style={{width:800}}  alt="" /></Item>
 
 
                         </Carousel>

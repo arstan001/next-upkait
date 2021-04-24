@@ -80,6 +80,7 @@ function Recipes(){
                 <h3>{t.recipe4_title}</h3>
                 <h6>{t.recipe4_title2}</h6>
                 <p>{t.recipe4_ing}</p>
+                <p>{t.recipe4_ing1}</p>
                 <p>{t.recipe4_text1}</p>
                 <p>{t.recipe4_text2}</p>
                 <p>{t.recipe4_text3}</p>

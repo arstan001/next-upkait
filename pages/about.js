@@ -18,7 +18,7 @@ function About() {
                 <div className="container grid">
                     <div className="about_title">
                         <h1>{t.brand_low}</h1>
-                        <p>{t.about_head}</p>
+                        
                     </div>
                     <div className="overlay"></div>
                 </div>

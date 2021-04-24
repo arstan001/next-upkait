@@ -77,6 +77,7 @@ function Contact() {
           <div className="grid-2 py-5">
             <div className="contact-title">
               <h1 className="md">{t.contact_head_title}</h1>
+              <p >{t.contact_head_subtitle}</p>
               <p>{t.contact_head_text}</p>
             </div>
             <div className="contact-title">
