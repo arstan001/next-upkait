@@ -11,7 +11,7 @@ function MyNavbar() {
     const { locale } = router
     const t = locale === 'en' ? en : ru
     return (
-        <Navbar expand="lg" className="fixed-top p-0 d-flex justify-content-center">
+        <Navbar expand="lg" className="fixed-top p-0 d-flex justify-content-center mynavbg">
             <div className="container mynavbg p-1 m-0">
                 <table id="navbartab">
                     <tbody>
