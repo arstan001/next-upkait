@@ -410,6 +410,7 @@ nav a:active {
 
 .showcase {
   position: relative;
+  padding-top: 40px;
 }
 
 .showcase > * {
@@ -461,7 +462,7 @@ nav a:active {
 
 .showcase .grid {
   overflow: visible;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
   gap: 40px;
 }
 
@@ -515,7 +516,7 @@ section .whyus {
 
 .whyus .grid {
   min-height: 200px;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 3fr 3fr;
   gap: 0;
   margin: 0 auto;
   padding: 0 auto;
@@ -537,10 +538,10 @@ section .whyus {
   position: relative;
 }
 
-.whyus .text p {
-  text-align: center;
+.whyus p {
+  text-align: justify !important;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
 }
 
@@ -631,7 +632,7 @@ section .whyus {
 .about-head .about_title {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 2%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -651,12 +652,12 @@ section .whyus {
 }
 
 .about-sub-head {
-  padding: 3rem;
+  padding: 0.7rem;
   /* margin: 3rem; */
 }
 
 .about-sub-head p {
-  text-align: start;
+  text-align: justify;
 }
 
 .timeline {
@@ -743,11 +744,13 @@ section .whyus {
 
 .about-map p {
   margin: 5px auto;
+  text-align: start;
 }
 
-/* .about-map img {
-  min-width: 500px;
-} */
+.about-map img {
+  min-width: 300px;
+  min-height: 200px;
+}
 
 /* product */
 
@@ -866,10 +869,19 @@ section .whyus {
   text-align: start;
 }
 
+.recipes-main {
+  text-align: start;
+}
 .recipes-main .recipe p {
   margin-bottom: 8px;
+  text-align: start;
 }
 
+.recipes-main .img-fluid {
+  max-height: 300px;
+  max-width: min-content;
+  align-self: center;
+}
 /* .recipes-head .overlay {
     background: #0000008a;
     width: 100%;
@@ -1095,8 +1107,11 @@ section .whyus {
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
   }
-  .showcase.indexImage {
-    width: 300;
+  .showcase .indexImage {
+    width: 650px !important;
+  }
+  .copyright p {
+    text-align: start;
   }
 
   .cli .grid > *:first-child {
@@ -1158,9 +1173,17 @@ section .whyus {
   main {
     margin-top: 104px;
   }
-  .about-sub-head .container {
-    width: 90%;
+  .about-head .about_title {
+    text-align: center;
   }
+  /* .about-sub-head .container {
+    width: 100%;
+  } */
+
+  /* .about-sub-head .about-main-text {
+    text-align: justify !important;
+  } */
+
   .indexImage {
     width: 200px;
   }
@@ -1179,6 +1202,11 @@ section .whyus {
   .showcase .showcase-img {
     margin-bottom: 100px;
   }
+  .showcase .indexImage {
+    width: 400px !important;
+    padding: 0;
+    margin: 0;
+  }
   .about-sub-head p {
     font-size: 1rem;
   }
@@ -1193,11 +1221,17 @@ section .whyus {
   }
 
   .about-sub-head,
-  .about-sub-head p,
   .recipe_title {
     text-align: center;
   }
   .recipes-main p {
     text-align: left;
   }
+
+  .copyright p {
+    text-align: start;
+  }
+  /* .recipes-main .card .kimchi img {
+    height: 100px !important;
+  } */
 }

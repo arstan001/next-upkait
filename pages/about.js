@@ -18,17 +18,16 @@ function About() {
                 <div className="container grid">
                     <div className="about_title">
                         <h1>{t.brand_low}</h1>
-                        
+                        <h3>{t.brand_sub_text}</h3>
                     </div>
                     <div className="overlay"></div>
                 </div>
             </section>
             <section className="about-sub-head bg-light py-3">
-                <div className="container flex">
-                    <div>
-                        <h1 className="md">{t.about_sub_title}</h1>
-                        <p> {t.about_sub_text1}
-                    </p>
+                <div className="container flex about-main-text">
+                    <div className="about-main-text">
+                        <h1 className="md ">{t.about_sub_title}</h1>
+                        <p> {t.about_sub_text1}</p>
                         <p>{t.about_sub_text2} </p>
                         <p> {t.about_sub_text3} </p>
                         <p id="history"> {t.about_sub_text4} </p>

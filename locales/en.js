@@ -38,6 +38,7 @@ export default {
 
 
     brand_low: "Upkait",
+    brand_sub_text: "Upkait offers a wide range of products from South Korea",
     about_head: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nesciunt utdelectus, omnis repellendus quae sint vitae culpa temporibus dicta.",
     about_sub_title: "About Upkait",
     about_sub_text1: "Trading company UPKAIT carries out wholesale deliveries of food products across the territory of the Far East, Siberia, Kazakhstan, Uzbekistan.",

@@ -115,7 +115,7 @@ function Index() {
 
                 <div className="container flex">
                     <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:2}})}>
-                        <h4>Namyang</h4>
+                        <h4>Nam yang</h4>
                         <img src="/images/logos/namyang.png" alt="" />
                     </div>
                     <div className="card"  onClick={()=>router.push({pathname:'/products', query:{num:1}})}>
@@ -141,6 +141,10 @@ function Index() {
                     <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:5}})}>
                         <h4>Haitai</h4>
                         <img src="images/logos/haitai.png" alt="" />
+                    </div>
+                    <div className="card" onClick={()=>router.push({pathname:'/products', query:{num:5}})}>
+                        <h4>Bing grae</h4>
+                        <img src="images/logos/bing.jpeg" alt="" />
                     </div>
                 </div>
             </section>

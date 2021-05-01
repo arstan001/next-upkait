@@ -38,6 +38,7 @@ export default{
 
 
     brand_low: "Апкайт",
+    brand_sub_text: "Компания Апкайт предлагает большой ассортимент товаров из Южной Кореи",
     about_head: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nesciunt utdelectus, omnis repellendus quae sint vitae culpa temporibus dicta.",
     about_sub_title: "О компании",
     about_sub_text1: "Торговая компания АПКАЙТ осуществляет оптовые поставки продуктов питания по территории Дальнего Востока, Сибири, Казахстана, Узбекистана.",

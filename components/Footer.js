@@ -12,13 +12,14 @@ function Footer(){
    return(
     <footer className="footer bg-dark py-5">
     <div className="container grid grid-4">
-        <div>
+        <div className="copyright">
             <Link href='/'><h3><a>Upkait</a></h3></Link>
             <p>Copyright &copy; 2021</p>
         </div>
         <div className="social">
             <Link href='/'><a><i className="fab fa-facebook fa-2x"></i></a></Link>
-            <Link href='/'><a><i className="fab fa-instagram fa-2x"></i></a></Link>
+            <Link href='https://www.instagram.com/upkait__official/?igshid=l4kmse3783n0' >
+                <a target="_blank"><i className="fab fa-instagram fa-2x"></i></a></Link>
         </div>
         <div>
             <nav>

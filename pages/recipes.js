@@ -56,7 +56,9 @@ function Recipes(){
     <section className="recipes-main my-4">
         <div className="container grid">
             <div className="card bg-light p-3">
+                <figure>
                 <img src="./images/recipes/rabokki.jpg" className="img-fluid" alt=""/>
+                </figure>
             </div>
             <div className="card recipe">
                 <h3>{t.recipe3_title}</h3>
@@ -90,10 +92,10 @@ function Recipes(){
     </section>
     <section className="recipes-main my-4">
         <div className="container grid">
-            <div className="card bg-light p-3">
+            <div className="card kimchi bg-light p-3">
                 <img src="./images/recipes/kimchi.png" className="img-fluid" alt=""/>
             </div>
-            <div className="card">
+            <div className="card recipe">
                 <h3>{t.recipe0_title}</h3>
                 <h5>{t.recipe01_title}</h5>
                 <p>{t.recipe01_text}</p>
