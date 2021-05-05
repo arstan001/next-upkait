@@ -23,7 +23,7 @@ function Index() {
     const { locale } = router
     const t = locale === 'en' ? en : ru
     return (
-        <MainLayout title={"Home Page"}>
+        <MainLayout title={"Upkait"}>
             <section className="showcase">
                 <div className="container grid">
                     <div className="showcase-text">

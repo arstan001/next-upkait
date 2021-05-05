@@ -7,7 +7,7 @@ function Recipes(){
     const { locale } = router
     const t = locale === 'en' ? en : ru
     return (
-        <MainLayout>
+        <MainLayout title={"Recipes"}>
 <section className="recipes-head">
         <div className="container grid">
             <div className="recipe_title">

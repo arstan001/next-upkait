@@ -13,7 +13,7 @@ function About() {
     const t = locale === 'en' ? en : ru
 
     return (
-        <MainLayout title={"About Page"}>
+        <MainLayout title={"About Upkait"}>
             <section className="about-head">
                 <div className="container grid">
                     <div className="about_title">

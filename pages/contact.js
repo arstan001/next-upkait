@@ -71,7 +71,7 @@ function Contact() {
   }
 
   return (
-    <MainLayout>
+    <MainLayout title={"Contact Us"}>
       <section className="contact-head">
         <div className="container ">
           <div className="grid-2 py-5">

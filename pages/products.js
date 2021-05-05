@@ -48,7 +48,7 @@ function Products({ product, producten }) {
   }, [active]);
 
   return (
-    <MainLayout>
+    <MainLayout title={"Products"}>
       <div className="container">
         <header className="text-center mt-4">
           <h1 className="mb-4">{t.Product}</h1>
