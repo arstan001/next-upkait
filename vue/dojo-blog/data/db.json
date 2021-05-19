@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the blog",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "tags": [
+        "webdev",
+        "coding",
+        "news"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "top 5 css tips",
+      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "tags": [
+        "css",
+        "webdev",
+        "coding"
+      ]
+    },
+    {
+      "title": "sdfsdfsdf",
+      "body": "dsfsdfsdfds",
+      "tags": [
+        "html",
+        "news"
+      ],
+      "id": 3
+    },
+    {
+      "title": "sdfsdfsdf",
+      "body": "dsfsdfsdfds",
+      "tags": [
+        "html",
+        "news"
+      ],
+      "id": 4
+    },
+    {
+      "title": "sdfsdfsdf",
+      "body": "dsfsdfsdfds",
+      "tags": [
+        "html",
+        "news"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Testing this post",
+      "body": "test test",
+      "tags": [
+        "dfssdf"
+      ],
+      "id": 6
+    },
+    {
+      "title": "My Vue 10 tips",
+      "body": "1. Use one component in multiple routes\nIt’s a pretty common situation developers encounter where multiple routes resolve to the same Vue component. \n\n\nHowever, the problem is that Vue optimizes your app and reuses existing components instead of creating new ones. So if you try to switch between routes that use the same component, nothing will change. ",
+      "tags": [],
+      "id": 7
+    }
+  ]
+}
